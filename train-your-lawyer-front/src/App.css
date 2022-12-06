@@ -1,0 +1,51 @@
+.cloud-first {
+  position: fixed;
+  height: 450px;
+  left: 55%;
+  top: -13%;
+}
+.cloud-second {
+  position: fixed;
+  height: 450px;
+  right: 55%;
+  bottom: -13%;
+}
+.diploma {
+  height: 200px;
+  position: fixed;
+  right: 10%;
+  top: 25%;
+}
+.student {
+  height: 350px;
+  position: fixed;
+  right: 70%;
+  bottom: -10%;
+}
+.balance {
+  height: 150px;
+  position: fixed;
+  right: 80%;
+  top: 250px;
+  rotate: 15deg;
+}
+.formulaire {
+  border: 2px solid;
+  box-shadow: 0px 6px rgba(25, 24, 24, 0.466);
+  position: fixed;
+  top: 20%;
+  left: 36%;
+  width: 350px;
+  height: 500px;
+  background-color: white;
+  border-radius: 25px;
+}
+
+@keyframes App-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
