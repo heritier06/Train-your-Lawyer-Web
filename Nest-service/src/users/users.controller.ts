@@ -17,6 +17,11 @@ export class UsersController {
         return this.service.getUser(params.id);
     }
 
+    @Get()
+    findAll() {
+        return this.service.getUser(2);
+    }
+
     // @Post()
     // create(@Body() user: User) {
     //     return this.service.createUser(user);
