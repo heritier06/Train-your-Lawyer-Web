@@ -1,10 +1,11 @@
-import cloud from '../Assets/cloud.png';
-import cloud2 from '../Assets/cloud.png';
-import diploma from '../Assets/diploma.png';
-import student from '../Assets/student.png';
-import balance from '../Assets/balance.png';
-import logo from '../Assets/logo.png';
+import cloud from './Assets/cloud.png';
+import cloud2 from './Assets/cloud.png';
+import diploma from './Assets/diploma.png';
+import student from './Assets/student.png';
+import balance from './Assets/balance.png';
+import logo from './Assets/logo.png';
 import React from 'react';
+import { Link } from "react-router-dom";
 import './Login.css'
 
 function Login() {
@@ -18,8 +19,12 @@ function Login() {
             <div className="formulaire">
                 <form action="/">
                     <img src={logo} className="logo" alt="logo"/>
-                    <a class="connect" href='#'>Se connecter</a>
-                    <a class="account" href='#'>Créer un compte</a>
+                    <li>
+                        <Link to="/" className="connect">Se connecter</Link>
+                    </li>
+                    <li>
+                        <Link to="/Register" className="account">Créer un compte</Link>
+                    </li>
                     <input type="email" name="e-mail" id="mail" placeholder="E-mail" required></input>
                     <input type="password" name="password" id="pass" placeholder="Mot de passe" required></input>
                     <div class="me">
