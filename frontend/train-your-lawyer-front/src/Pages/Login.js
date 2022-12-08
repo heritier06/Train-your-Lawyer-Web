@@ -18,8 +18,8 @@ function Login() {
             <div className="formulaire">
                 <form action="/">
                     <img src={logo} className="logo" alt="logo"/>
-                    <a class="connecter" href='#'>Se connecter</a>
-                    <a class="compte" href='#'>Créer un compte</a>
+                    <a class="connect" href='#'>Se connecter</a>
+                    <a class="account" href='#'>Créer un compte</a>
                     <input type="email" name="e-mail" id="mail" placeholder="E-mail" required></input>
                     <input type="password" name="password" id="pass" placeholder="Mot de passe" required></input>
                     <div class="me">
