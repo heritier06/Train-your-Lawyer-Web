@@ -10,11 +10,11 @@
                 <img src="../assets/logo.png" className="logo" alt="logo"/>
                 <a to="/Login" className="connect" @click="$router.push('/')">Se connecter</a>
                 <a to="/" className="account" @click="$router.push('/Register1')">Créer un compte</a>
-                <input type="email" name="e-mail" id="mail" placeholder="E-mail" required/>
-                <input type="password" name="password" id="pass" placeholder="Mot de passe" required/>
-                <input type="password" name="confirm" id="pass" placeholder="Confirmer le mot de passe" required/>
+                <input type="email" name="e-mail" id="mail" placeholder="E-mail" required autofocus/>
+                <input type="password" name="password" id="pass" placeholder="Mot de passe" required autofocus/>
+                <input type="password" name="confirm" id="pass" placeholder="Confirmer le mot de passe" required autofocus/>
                 <a class="number" href='#'>1/2</a>
-                <a class="button" @click="$router.push('/Register2')" >Suivant</a>
+                <button type="submit" class="button-s" @click="$router.push('/Register2')" >Suivant</button>
             </form>
         </div>
     </div>
@@ -166,7 +166,7 @@ input[type=password]{
   transform-origin: bottom left;
 }
 
-a.button {
+button.button-s {
   font-size: 14px;
   font-weight: 600;
   color: white;
@@ -184,7 +184,7 @@ a.button {
   top: 0px;
   position: relative;
 }
-a.button:hover {
+button.button-s:hover {
   background: #f47303;
   color: #fff;
   border-radius: 5px;

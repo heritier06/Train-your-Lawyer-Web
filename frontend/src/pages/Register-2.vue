@@ -11,17 +11,17 @@
                     <a className="connect" @click="$router.push('/')">Se connecter</a>
                     <a className="account" @click="$router.push('/Register1')">Créer un compte</a>
                     <select name="select" id="select">
-                        <option value="">Choose a year</option>
+                        <option value="">Choisis ton année</option>
                         <option value="1">1ere Année</option>
                         <option value="2">2ème Année</option>
                         <option value="3">3ème Année</option>
                         <option value="3">4ème Année</option>
                         <option value="3">5ème Année</option>
                     </select>
-                    <input type="name" name="nom" id="nom" placeholder="Nom" required />
-                    <input type="name" name="prenom" id="nom" placeholder="Prénom" required/>
+                    <input type="name" name="nom" id="nom" placeholder="Nom" required autofocus />
+                    <input type="name" name="prenom" id="nom" placeholder="Prénom" required autofocus/>
                     <a class="number" href='#'>2/2</a>
-                    <a class="button" @click="$router.push('/Success')">Créer</a>
+                    <button type ="submit" class="button-s" >Créer</button>
                 </form>
             </div>
     </div>
@@ -177,7 +177,7 @@ input[type=name]{
   transform-origin: bottom left;
 }
 
-a.button {
+button.button-s {
   font-size: 14px;
   font-weight: 600;
   color: white;
@@ -195,7 +195,7 @@ a.button {
   top: 0px;
   position: relative;
 }
-a.button:hover {
+button.button-s:hover {
   background: #f47303;
   color: #fff;
   border-radius: 5px;

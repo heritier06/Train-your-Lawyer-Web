@@ -10,14 +10,14 @@
                 <img src="../assets/logo.png" class="logo" alt="logo" />
                 <a class="connect-lo" @click="$router.push('/')">Se connecter</a>
                 <a class="account-lo" @click="$router.push('/Register1')">Créer un compte</a>
-                <input type="email" name="e-mail" id="mail" placeholder="E-mail" required />
-                <input type="password" name="password" id="pass" placeholder="Mot de passe" required />
+                <input type="email" name="e-mail" id="mail" placeholder="E-mail" required autofocus/>
+                <input type="password" name="password" id="pass" placeholder="Mot de passe" required autofocus />
                 <div class="me">
                     <input type="checkbox" name="rememberme" id="rememberme" value="1" />
                     <label for="rememberme">Se souvenir de moi</label>
                 </div>
                 <a class="forgot" href="#">Mot de passe oublié?</a>
-                <a class="button" @click="$router.push('/Success')">Connexion</a>
+                <button class="button-s" type="submit">Connexion</button>
             </form>
         </div>
     </div>
@@ -173,7 +173,7 @@ input[type=password]{
   top: 65%;
   left: 8%;
 }
-a.button {
+button.button-s {
   font-size: 14px;
   font-weight: 600;
   color: white;
@@ -191,7 +191,7 @@ a.button {
   top: 0px;
   position: relative;
 }
-a.button:hover {
+button.button-s:hover {
   background: #f47303;
   color: #fff;
   border-radius: 5px;
