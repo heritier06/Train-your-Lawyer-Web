@@ -24,6 +24,13 @@ export class UsersService {
         });
     }
 
+    async checkSubscribed(_email, _password): Promise<User[]> {
+        return await this.usersRepository.find({
+            select: ["email", "password", "year", "nom", "prenom"],
+            where: [{ "email": _email, "password": _password}]
+        });
+    }
+
     async createUser(user: newUser): Promise<User> {
         return await this.usersRepository.save(user);
     }

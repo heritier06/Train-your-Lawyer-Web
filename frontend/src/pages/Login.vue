@@ -50,11 +50,9 @@ export default {
       };
       this.__submitToServer(postData);
     },
-    __submitToServer(data) {
-      console.log(data.email);
-      axios.post("http://localhost:3000/users/", data).then(data => {
-        //
-      });
+    async __submitToServer(data) {
+      let res = await axios.post("http://localhost:3000/users/login", data);
+      console.log(JSON.stringify(res.data));
     }
   }
 };
