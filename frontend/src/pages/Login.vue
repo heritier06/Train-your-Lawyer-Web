@@ -6,12 +6,12 @@
       <img src="../assets/student.png" class="student" alt="student" />
       <img src="../assets/balance.png" class="balance" alt="balance" />
       <div class="formulaire">
-            <form action="/">
+            <form action="/" @submit.prevent="createPost">
                 <img src="../assets/logo.png" class="logo" alt="logo" />
-                <a class="connect-lo" @click="$router.push('/')">Se connecter</a>
+                <a class="connect-lo" @click="$router.push('/')">Se connecteer</a>
                 <a class="account-lo" @click="$router.push('/Register1')">Créer un compte</a>
-                <input type="email" name="e-mail" id="mail" placeholder="E-mail" required autofocus/>
-                <input type="password" name="password" id="pass" placeholder="Mot de passe" required autofocus />
+                <input type="email" v-model="email" name="e-mail" id="mail" placeholder="E-mail" required autofocus/>
+                <input type="password" v-model="password" name="password" id="pass" placeholder="Mot de passe" required autofocus />
                 <div class="me">
                     <input type="checkbox" name="rememberme" id="rememberme" value="1" />
                     <label for="rememberme">Se souvenir de moi</label>
@@ -22,6 +22,43 @@
         </div>
     </div>
 </template>
+
+<script>
+import axios from "axios";
+export default {
+  data() {
+    return {
+      /*title: "",
+      description: "",
+      body: "",
+      author: "",
+      date_posted: ""*/
+      email: "",
+      password: ""
+    };
+  },
+  methods: {
+    createPost() {
+      let postData = {
+        email: this.email,
+        password: this.password
+        /*title: this.title,
+        description: this.description,
+        body: this.body,
+        author: this.author,
+        date_posted: this.date_posted*/
+      };
+      this.__submitToServer(postData);
+    },
+    __submitToServer(data) {
+      console.log(data.email);
+      axios.post("http://localhost:3000/users/", data).then(data => {
+        //
+      });
+    }
+  }
+};
+</script>
 
 <style scoped>
 .Login {
