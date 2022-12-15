@@ -8,7 +8,7 @@
       <div class="formulaire">
             <form action="/">
                 <img src="../assets/logo.png" class="logo" alt="logo" />
-                <a class="connect-lo" @click="$router.push('/')">Se connecter</a>
+                <a class="connect-lo" @click="$router.push('/Login')">Se connecter</a>
                 <a class="account-lo" @click="$router.push('/Register1')">Créer un compte</a>
                 <input type="email" name="e-mail" id="mail" placeholder="E-mail" required autofocus/>
                 <input type="password" name="password" id="pass" placeholder="Mot de passe" required autofocus />
@@ -104,6 +104,7 @@ input[type=password]{
   position: absolute;
   top: 25%;
   left: 6%;
+  cursor: pointer;
 }
 .account-lo {
   font-weight: lighter;
@@ -112,6 +113,7 @@ input[type=password]{
   position: absolute;
   top : 25%;
   right: 6%;
+  cursor: pointer;
 }
 .forgot {
   font-size: 70%;

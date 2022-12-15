@@ -103,6 +103,7 @@ input[type=password]{
   position: absolute;
   top: 25%;
   left: 6%;
+  cursor: pointer;
 }
 .account {
   font-weight: bold;
@@ -111,6 +112,7 @@ input[type=password]{
   position: absolute;
   top : 25%;
   right: 6%;
+  cursor: pointer;
 }
 .number {
   font-size: 70%;
