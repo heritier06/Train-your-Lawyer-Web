@@ -64,7 +64,7 @@
 
 <style scoped>
 
-.cours {
+.pack {
     margin-top: 5%;
     margin-left: 7%;
     display: inline-flex;
@@ -74,7 +74,7 @@
     height: 45px;
     box-shadow: 0 0 10px 0 rgb(255, 106, 0) inset, 0 0 10px 4px  rgb(255, 106, 0);
 }
-.entrainement, .article, .td, .pack {
+.entrainement, .article, .td, .cours {
     margin-top: 5%;
     margin-left: 7%;
     display: inline-flex;
@@ -82,7 +82,7 @@
     width: 220px;
     height: 45px;
 }
-.entrainement:hover, .article:hover, .td:hover, .pack:hover{
+.entrainement:hover, .article:hover, .td:hover, .cours:hover{
     background-color: #ffff;
     color: rgb(0, 0, 0);
     transition: all 850ms ease-in-out;

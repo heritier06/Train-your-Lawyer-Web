@@ -28,35 +28,33 @@
             <img src="../assets/logo.png" class="logo" alt="logo" @click="$router.push('/')"/>
             <a class="title" @click="$router.push('/')">Train your lawyer</a>
         </div>
-        <div class="grid grid-flow-row-dense grid-cols-3 grid-rows-1 formation">
-            <button class="licence1" @click="$router.push('/Lesson')">Licence 1</button>
-            <button class="licence2" @click="$router.push('/Licence2')">Licence 2</button>
-            <button class="licence3" @click="$router.push('/Licence3')">Licence 3</button>
+        <div class="grid grid-flow-row-dense grid-cols-1 grid-rows-1 formation">
+            <p class="text-xl mt-12 font-bold text-center">Sessions d'entraînements</p>
         </div>
-        <div class="grid grid-flow-row-dense grid-cols-3 grid-rows-3 content">
-            <div class="constitutionel">
-                <img src="../assets/law.png" class="law" alt="law"/>
-                <a class="const-name">Droit constitutionel</a>
+        <div class="grid grid-flow-row-dense grid-cols-1 grid-rows-3 content">
+            <div class="first-training">
+                <div class="brd-1">
+                    <img class ="trn-01" src="../assets/wooo.png">
+                </div>
+                <p class="ml-12 text-xl mt-12 font-bold text-center">
+                    Droit administratif 1 - Session d’entraînement
+                </p>
             </div>
-            <div class="famille">
-                <img src="../assets/family.png" class="family" alt="family"/>
-                <a class="fam-name">Droit de la famille</a>
+            <div class="second-training">
+                <div class="brd-2">
+                    <img class ="trn-02" src="../assets/law.png">
+                </div>
+                <p class="ml-12 text-xl mt-12 font-bold text-center">
+                    Droit constitutionnel 1 - Session d’entraînement
+                </p>
             </div>
-            <div class="personne">
-                <img src="../assets/people.png" class="people" alt="people"/>
-                <a class="pers-name">Droit des personnes</a>
-            </div>
-            <div class="finance">
-                <img src="../assets/money.png" class="money" alt="money"/>
-                <a class="fin-name">Droit des finances</a>
-            </div>
-            <div class="notariat">
-                <img src="../assets/lock1.png" alt="lock" class="lock">
-                <a class="not-name">Droit notarial</a>
-            </div>
-            <div class="assurance">
-                <img src="../assets/lock1.png" alt="lock" class="lock">
-                <a class="assu-name">Droit des assurances</a>
+            <div class="third-training">
+                <div class="brd-3">
+                    <img class ="trn-03" src="../assets/fusee.png">
+                </div>
+                <p class="ml-12 text-xl mt-12 font-bold text-center">
+                    Droit administratif 2 - Session d’entraînement
+                </p>
             </div>
         </div>
     </div>
@@ -64,7 +62,28 @@
 
 <style scoped>
 
-.cours {
+.brd-1, .brd-2, .brd-3{
+    height: 150px;
+    width: 250px;
+    background-color: #ee9f45;
+}
+.trn-01, .trn-02, .trn-03{
+    height: 100%;   
+}
+.first-training, .second-training, .third-training{
+    display: inline-flex;
+    float: right;
+    background-color: #fff;
+    width: 1000px;
+    height: 150px;
+    border-radius: 10px;
+    margin-top: 35px;
+    margin-left: 5%;
+    border: 0px solid;
+    box-shadow: 0px 0px 18px grey;
+    background: linear-gradient(180deg, #e98a1e, 0.1%, white);
+}
+.entrainement {
     margin-top: 5%;
     margin-left: 7%;
     display: inline-flex;
@@ -74,7 +93,7 @@
     height: 45px;
     box-shadow: 0 0 10px 0 rgb(255, 106, 0) inset, 0 0 10px 4px  rgb(255, 106, 0);
 }
-.entrainement, .article, .td, .pack {
+.cours, .article, .td, .pack {
     margin-top: 5%;
     margin-left: 7%;
     display: inline-flex;
@@ -82,7 +101,7 @@
     width: 220px;
     height: 45px;
 }
-.entrainement:hover, .article:hover, .td:hover, .pack:hover{
+.cours:hover, .article:hover, .td:hover, .pack:hover{
     background-color: #ffff;
     color: rgb(0, 0, 0);
     transition: all 850ms ease-in-out;
