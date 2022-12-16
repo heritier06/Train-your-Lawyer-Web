@@ -35,24 +35,50 @@
         </div>
         <div class="grid grid-flow-row-dense grid-cols-3 grid-rows-3 content">
             <div class="constitutionel">
-                <a class="const-name">Droit constitutionel</a>
+                <img src="../assets/entr.png" class="law" alt="law"/>
+                <a class="const-name">Fiscalités des Entreprises</a>
             </div>
             <div class="famille">
-                <a class="fam-name">Droit de la famille</a>
+                <img src="../assets/sur.png" class="family" alt="family"/>
+                <a class="fam-name">Droit des Sûretés</a>
             </div>
             <div class="personne">
-                <a class="pers-name">Droit des personnes</a>
+                <img src="../assets/gen.png" class="people" alt="people"/>
+                <a class="pers-name">Droit Fiscal Général</a>
             </div>
             <div class="finance">
-                <a class="fin-name">Droit des finances</a>
+                <img src="../assets/lock1.png" class="money" alt="money"/>
+                <a class="fin-name">Droit des Propriétés Public</a>
             </div>
             <div class="notariat">
-                <a class="not-name">Droit notarial</a>
+                <img src="../assets/lock1.png" alt="lock" class="lock">
+                <a class="not-name">Procédure Collective</a>
             </div>
             <div class="assurance">
-                <a class="assu-name">Droit des assurances</a>
+                <img src="../assets/lock1.png" alt="lock" class="lock">
+                <a class="assu-name">Contrats Spéciaux</a>
             </div>
         </div>
+        <!-- <div class="grid grid-flow-row-dense grid-cols-3 grid-rows-3 content">
+            <div class="constitutionel">
+                <a class="const-name">Fiscalités des Entreprises</a>
+            </div>
+            <div class="famille">
+                <a class="fam-name">Droit des Sûretés</a>
+            </div>
+            <div class="personne">
+                <a class="pers-name">Droit Fiscal Général</a>
+            </div>
+            <div class="finance">
+                <a class="fin-name">Droit des Propriétés Public</a>
+            </div>
+            <div class="notariat">
+                <a class="not-name">Procédure Collective</a>
+            </div>
+            <div class="assurance">
+                <a class="assu-name">Contrats Spéciaux</a>
+            </div>
+        </div> -->
     </div>
 </template>
 
@@ -217,135 +243,174 @@ button.licence2{
     cursor: pointer;
 }
 .constitutionel {
-    float: right;
-    background-color: #fff;
-    width: 250px;
-    height: 250px;
-    border-radius: 10px;
-    margin-top: 30px;
-    margin-left: 20%;
-    border: 0px solid;
-    box-shadow: 0px 0px 18px grey;
-    background: linear-gradient(180deg, #e98a1e, 0.1%, white);
+        float: right;
+        background-color: #fff;
+        width: 250px;
+        height: 250px;
+        border-radius: 10px;
+        margin-top: 30px;
+        margin-left: 20%;
+        border: 0px solid;
+        box-shadow: 0px 0px 18px grey;
+        background: linear-gradient(180deg, #e98a1e, 0.1%, white);
 }
 a.const-name{
-    color: 0000;
-    position: absolute;
-    font-size: 15px;
-    margin-top: 210px;
-    margin-left: 3.8%;
-    font-weight: bold;
-    text-decoration: none;
-    cursor: pointer;
+        color: 0000;
+        position: absolute;
+        font-size: 15px;
+        margin-top: 210px;
+        margin-left: 3.8%;
+        font-weight: bold;
+        text-decoration: none;
+        cursor: pointer;
+        top: 200px;
 }
 .famille {
-    float: right;
-    background-color: #fff;
-    width: 250px;
-    height: 250px;
-    border-radius: 10px;
-    margin-top: 30px;
-    margin-left: 20%;
-    border: 0px solid;
-    box-shadow: 0px 0px 18px grey;
-    background: linear-gradient(180deg, #e98a1e, 0.1%, white);
+        float: right;
+        background-color: #fff;
+        width: 250px;
+        height: 250px;
+        border-radius: 10px;
+        margin-top: 30px;
+        margin-left: 20%;
+        border: 0px solid;
+        box-shadow: 0px 0px 18px grey;
+        background: linear-gradient(180deg, #e98a1e, 0.1%, white);
 }
 a.fam-name{
-    color: 0000;
-    position: absolute;
-    font-size: 15px;
-    margin-top: 210px;
-    margin-left: 3.8%;
-    font-weight: bold;
-    text-decoration: none;
-    cursor: pointer;
+        position: absolute;
+        font-size: 15px;
+        margin-top: 210px;
+        margin-left: 3.8%;
+        font-weight: bold;
+        text-decoration: none;
+        cursor: pointer;
+        left: 52.5%;
+        top: 200px;
 }
 .personne {
-    float: right;
-    background-color:#fff;
-    width: 250px;
-    height: 250px;
-    border-radius: 10px;
-    margin-top: 30px;
-    margin-left: 20%;
-    border: 0px solid;
-    box-shadow: 0px 0px 18px grey;
-    background: linear-gradient(180deg, #e98a1e, 0.1%, white);
+        float: right;
+        background-color:#fff;
+        width: 250px;
+        height: 250px;
+        border-radius: 10px;
+        margin-top: 30px;
+        margin-left: 20%;
+        border: 0px solid;
+        box-shadow: 0px 0px 18px grey;
+        background: linear-gradient(180deg, #e98a1e, 0.1%, white);
 }
 a.pers-name{
-    color: 0000;
-    position: absolute;
-    font-size: 15px;
-    margin-top: 210px;
-    margin-left: 3.8%;
-    font-weight: bold;
-    text-decoration: none;
-    cursor: pointer;
+        color: 0000;
+        position: absolute;
+        font-size: 15px;
+        margin-top: 210px;
+        margin-left: 3.8%;
+        font-weight: bold;
+        text-decoration: none;
+        cursor: pointer;
+        left: 78.9%;
+        top: 200px;
 }
 .finance {
-    float: right;
-    background-color: #fff;
-    width: 250px;
-    height: 250px;
-    border-radius: 10px;
-    margin-top: 150px;
-    margin-left: 20%;
-    border: 0px solid;
-    box-shadow: 0px 0px 18px grey;
-    background: linear-gradient(180deg, #e98a1e, 0.1%, white);
+        float: right;
+        background-color: #fff;
+        width: 250px;
+        height: 250px;
+        border-radius: 10px;
+        margin-top: 150px;
+        margin-left: 20%;
+        border: 0px solid;
+        box-shadow: 0px 0px 18px grey;
+        background: linear-gradient(180deg, #e98a1e, 0.1%, white);
 }
 a.fin-name{
-    color: 0000;
-    position: absolute;
-    font-size: 15px;
-    margin-top: 210px;
-    margin-left: 3.8%;
-    font-weight: bold;
-    text-decoration: none;
-    cursor: pointer;
+        color: 0000;
+        position: absolute;
+        font-size: 15px;
+        margin-top: 26px;
+        margin-left: 0.8%;
+        font-weight: bold;
+        text-decoration: none;
+        cursor: pointer;
 }
 .assurance {
-    float: right;
-    background-color: #fff;
-    width: 250px;
-    height: 250px;
-    border-radius: 10px;
-    margin-top: 150px;
-    margin-left: 20%;
-    border: 0px solid;
-    box-shadow: 0px 0px 18px grey;
-    background: linear-gradient(180deg, #e98a1e, 0.1%, white);
+        float: right;
+        background-color: #fff;
+        width: 250px;
+        height: 250px;
+        border-radius: 10px;
+        margin-top: 150px;
+        margin-left: 20%;
+        border: 0px solid;
+        box-shadow: 0px 0px 18px grey;
+        background: linear-gradient(180deg, #e98a1e, 0.1%, white);
 }
 a.assu-name{
-    color: 0000;
-    position: absolute;
-    font-size: 15px;
-    margin-top: 210px;
-    margin-left: 3.5%;
-    font-weight: bold;
-    text-decoration: none;
-    cursor: pointer;
+        color: 0000;
+        position: absolute;
+        font-size: 15px;
+        margin-top: 50px;
+        margin-left: 3.5%;
+        font-weight: bold;
+        text-decoration: none;
+        cursor: pointer;
 }
 .notariat {
-    float: right;
-    background-color: #fff;
-    width: 250px;
-    height: 250px;
-    border-radius: 10px;
-    margin-top: 150px;
-    margin-left: 20%;
-    border: 0px solid;
-    box-shadow: 0px 0px 18px grey;
-    background: linear-gradient(180deg, #e98a1e, 0.1%, white);
+        float: right;
+        background-color: #fff;
+        width: 250px;
+        height: 250px;
+        border-radius: 10px;
+        margin-top: 150px;
+        margin-left: 20%;
+        border: 0px solid;
+        box-shadow: 0px 0px 18px grey;
+        background: linear-gradient(180deg, #e98a1e, 0.1%, white);
 }
 a.not-name{
-    color: 0000;
-    position: absolute;
-    font-size: 15px;
-    margin-top: 210px;
-    margin-left: 5.1%;
-    font-weight: bold;
-    text-decoration: none;
-    cursor: pointer;
+        color: 0000;
+        position: absolute;
+        font-size: 15px;
+        margin-top: 50px;
+        margin-left: 5.1%;
+        font-weight: bold;
+        text-decoration: none;
+        cursor: pointer;
+}
+.law{
+        position: relative;
+        width: 60%;
+        height: 55%;
+        top: 15%;
+        left: 19%;
+}
+.family{
+        position: relative;
+        width: 75%;
+        height: 70%;
+        top: 10%;
+        left: 10.5%;
+}
+.people {
+        position: relative;
+        width: 85%;
+        height: 80%;
+        top: 3%;
+        left: 10.5%;
+}
+.money{
+        position: relative;
+        width: 75%;
+        height: 70%;
+        top: 5%;
+        left: 10.5%;
+}
+.lock{ 
+        position: relative;
+        width: 65%;
+        height: 60%;
+        top: 6%;
+        left: 16.5%;;
 }
 </style>

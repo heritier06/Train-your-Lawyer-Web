@@ -39,24 +39,24 @@
                 <a class="const-name">Droit constitutionel</a>
             </div>
             <div class="famille">
-                <img src="../assets/family.png" class="family" alt="family"/>
-                <a class="fam-name">Droit de la famille</a>
+                <img src="../assets/Introduction.png" class="family" alt="family"/>
+                <a class="fam-name">Introduction au Droit</a>
             </div>
             <div class="personne">
-                <img src="../assets/people.png" class="people" alt="people"/>
-                <a class="pers-name">Droit des personnes</a>
+                <img src="../assets/droit_civil.png" class="people" alt="people"/>
+                <a class="pers-name">Droit Civil</a>
             </div>
             <div class="finance">
-                <img src="../assets/money.png" class="money" alt="money"/>
-                <a class="fin-name">Droit des finances</a>
+                <img src="../assets/histoire.png" class="money" alt="money"/>
+                <a class="fin-name">Histoire du Droit</a>
             </div>
             <div class="notariat">
                 <img src="../assets/lock1.png" alt="lock" class="lock">
-                <a class="not-name">Droit notarial</a>
+                <a class="not-name">Histoire Politique <br>et Constitutionel</a>
             </div>
             <div class="assurance">
                 <img src="../assets/lock1.png" alt="lock" class="lock">
-                <a class="assu-name">Droit des assurances</a>
+                <a class="assu-name">Sociologie Politique</a>
             </div>
         </div>
     </div>
@@ -238,7 +238,7 @@ a.const-name{
     color: 0000;
     position: absolute;
     font-size: 15px;
-    margin-top: 210px;
+    margin-top: 225px;
     margin-left: 3.8%;
     font-weight: bold;
     text-decoration: none;
@@ -260,7 +260,7 @@ a.const-name{
 a.fam-name{
     position: absolute;
     font-size: 15px;
-    margin-top: 210px;
+    margin-top: 225px;
     margin-left: 3.8%;
     font-weight: bold;
     text-decoration: none;
@@ -284,8 +284,8 @@ a.pers-name{
     color: 0000;
     position: absolute;
     font-size: 15px;
-    margin-top: 210px;
-    margin-left: 3.8%;
+    margin-top: 225px;
+    margin-left: 6.5%;
     font-weight: bold;
     text-decoration: none;
     cursor: pointer;
@@ -349,11 +349,12 @@ a.assu-name{
     background: linear-gradient(180deg, #e98a1e, 0.1%, white);
 }
 a.not-name{
+    text-align: center;
     color: 0000;
     position: absolute;
     font-size: 15px;
     margin-top: 50px;
-    margin-left: 5.1%;
+    margin-left: 4.1%;
     font-weight: bold;
     text-decoration: none;
     cursor: pointer;

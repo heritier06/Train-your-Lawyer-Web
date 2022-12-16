@@ -32,11 +32,11 @@
             <div class="help">
                 <p class="text-xl mt-12 font-bold text-center help-text">Aide aux TD</p>
                 <br><br>
-                <p class="font-serif text-center description"> Tu as du mal à comprendre ton cours ou préparer ton TD ? <br>
-                    Dans cette partie de la <br>plateforme, tu peux poser tes questions en ligne et <br>
-                    tu auras des experts qui se chargeront <br>
-                    de te repondre aux plus vite</p>
-                <br><br>
+                <p class="font-serif text-center description"> 
+                    Tu as du mal à comprendre ton cours ou préparer ton TD ? <br>
+                    Dans cette partie de la plateforme, tu peux poser toutes tes questions à nos tuteurs en ligne qui se chargeront de répondre aux plus vite. 
+                </p>
+                <br>
                 <button class="more">En savoir en plus</button>
             </div>
         </div>

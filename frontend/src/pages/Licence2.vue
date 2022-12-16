@@ -35,22 +35,28 @@
         </div>
         <div class="grid grid-flow-row-dense grid-cols-3 grid-rows-3 content">
             <div class="constitutionel">
-                <a class="const-name">Droit constitutionel</a>
+                <img src="../assets/fiscal.png" class="law" alt="law"/>
+                <a class="const-name">Droit Fiscal Général</a>
             </div>
             <div class="famille">
-                <a class="fam-name">Droit de la famille</a>
+                <img src="../assets/penal.png" class="family" alt="family"/>
+                <a class="fam-name">Droit Pénal Général</a>
             </div>
             <div class="personne">
-                <a class="pers-name">Droit des personnes</a>
+                <img src="../assets/admin.png" class="people" alt="people"/>
+                <a class="pers-name">Droit Administratif</a>
             </div>
             <div class="finance">
-                <a class="fin-name">Droit des finances</a>
+                <img src="../assets/lock1.png" class="money" alt="money"/>
+                <a class="fin-name">Droit des Libertés Fondamental</a>
             </div>
             <div class="notariat">
-                <a class="not-name">Droit notarial</a>
+                <img src="../assets/lock1.png" alt="lock" class="lock">
+                <a class="not-name">Anglais Général</a>
             </div>
             <div class="assurance">
-                <a class="assu-name">Droit des assurances</a>
+                <img src="../assets/lock1.png" alt="lock" class="lock">
+                <a class="assu-name">Finance et Publique</a>
             </div>
         </div>
     </div>
@@ -237,6 +243,7 @@ a.const-name{
     font-weight: bold;
     text-decoration: none;
     cursor: pointer;
+    top: 200px;
 }
 .famille {
     float: right;
@@ -251,7 +258,6 @@ a.const-name{
     background: linear-gradient(180deg, #e98a1e, 0.1%, white);
 }
 a.fam-name{
-    color: 0000;
     position: absolute;
     font-size: 15px;
     margin-top: 210px;
@@ -259,6 +265,8 @@ a.fam-name{
     font-weight: bold;
     text-decoration: none;
     cursor: pointer;
+    left: 52.5%;
+    top: 200px;
 }
 .personne {
     float: right;
@@ -281,6 +289,8 @@ a.pers-name{
     font-weight: bold;
     text-decoration: none;
     cursor: pointer;
+    left: 78.9%;
+    top: 200px;
 }
 .finance {
     float: right;
@@ -298,8 +308,8 @@ a.fin-name{
     color: 0000;
     position: absolute;
     font-size: 15px;
-    margin-top: 210px;
-    margin-left: 3.8%;
+    margin-top: 26px;
+    margin-left: 0.8%;
     font-weight: bold;
     text-decoration: none;
     cursor: pointer;
@@ -320,7 +330,7 @@ a.assu-name{
     color: 0000;
     position: absolute;
     font-size: 15px;
-    margin-top: 210px;
+    margin-top: 50px;
     margin-left: 3.5%;
     font-weight: bold;
     text-decoration: none;
@@ -342,10 +352,46 @@ a.not-name{
     color: 0000;
     position: absolute;
     font-size: 15px;
-    margin-top: 210px;
+    margin-top: 50px;
     margin-left: 5.1%;
     font-weight: bold;
     text-decoration: none;
     cursor: pointer;
+}
+.law{
+    position: relative;
+    width: 60%;
+    height: 55%;
+    top: 15%;
+    left: 19%;
+}
+.family{
+    position: relative;
+    width: 75%;
+    height: 70%;
+    top: 10%;
+    left: 10.5%;
+}
+.people {
+    position: relative;
+    width: 85%;
+    height: 80%;
+    top: 3%;
+    left: 10.5%;
+}
+
+.money{
+    position: relative;
+    width: 75%;
+    height: 70%;
+    top: 5%;
+    left: 10.5%;
+}
+.lock{ 
+    position: relative;
+    width: 65%;
+    height: 60%;
+    top: 6%;
+    left: 16.5%;;
 }
 </style>
