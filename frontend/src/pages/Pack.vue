@@ -28,42 +28,59 @@
             <img src="../assets/logo.png" class="logo" alt="logo" @click="$router.push('/')"/>
             <a class="title" @click="$router.push('/')">Train your lawyer</a>
         </div>
-        <div class="grid grid-flow-row-dense grid-cols-3 grid-rows-1 formation">
-            <button class="licence1" @click="$router.push('/Lesson')">Licence 1</button>
-            <button class="licence2" @click="$router.push('/Licence2')">Licence 2</button>
-            <button class="licence3" @click="$router.push('/Licence3')">Licence 3</button>
+        <p class="text-xl font-bold text-center welcome">
+            Des offres adaptées à tes besoins<br>
+            Train your lawyer  t’accompagne dans ta reussite de la licence 1 à la licence 3
+        </p>
+        <div class="content">
+            <img src="../assets/premium.jpeg" class="premium">
+            <img src="../assets/pro.jpeg" class="pro">
         </div>
-        <div class="grid grid-flow-row-dense grid-cols-3 grid-rows-3 content">
-            <div class="constitutionel">
-                <img src="../assets/law.png" class="law" alt="law"/>
-                <a class="const-name">Droit constitutionel</a>
-            </div>
-            <div class="famille">
-                <img src="../assets/family.png" class="family" alt="family"/>
-                <a class="fam-name">Droit de la famille</a>
-            </div>
-            <div class="personne">
-                <img src="../assets/people.png" class="people" alt="people"/>
-                <a class="pers-name">Droit des personnes</a>
-            </div>
-            <div class="finance">
-                <img src="../assets/money.png" class="money" alt="money"/>
-                <a class="fin-name">Droit des finances</a>
-            </div>
-            <div class="notariat">
-                <img src="../assets/lock1.png" alt="lock" class="lock">
-                <a class="not-name">Droit notarial</a>
-            </div>
-            <div class="assurance">
-                <img src="../assets/lock1.png" alt="lock" class="lock">
-                <a class="assu-name">Droit des assurances</a>
-            </div>
+        <div class="content-pre">
+            <button class="pre-ab" >Abonnement premium</button>
+        </div>
+        <div class="content-pro">
+            <button class="pro-ab" >Abonnement Pro</button>
         </div>
     </div>
 </template>
 
 <style scoped>
 
+.welcome{
+    position: fixed;
+    left: 35%;
+    top: 20%;
+}
+.content-pre{
+    display: inline-flex;
+    position: absolute;
+    top: 90%;
+    left: 34%;
+}
+
+.content-pro{
+    display: inline-flex;
+    position: absolute;
+    top: 90%;
+    left: 74%;
+}
+
+.pre-ab, .pro-ab{
+    text-align: center;
+    background-color: #ef890b;
+    border-radius: 10px;
+    width: 220px;
+    height: 45px;
+}
+
+.premium, .pro {
+    margin-top: 0%;
+    margin-left: 5%;
+    transform: scale(0.6);
+    border-radius: 15px 15px;
+    border: 3px solid;
+}
 .pack {
     margin-top: 5%;
     margin-left: 7%;
@@ -134,9 +151,12 @@
     float: right;
 }
 .content {
+    margin-top: 0%;
+    display: inline-flex;
+    background-color: #FFC580;
     float: right;
     width: 79.93%;
-    height: 70%;
+    height: 715px;
 }
 .up-bar {
     float: right;
@@ -171,227 +191,5 @@ a.title{
     top: 50px;
     left: 380px;
     font-weight: bold;
-}
-button.licence1{
-    border-radius: 10px;
-    text-align: center;
-    margin-top: 30px;
-    margin-left: 32%;
-    font-size: 15px;
-    display: inline-block;
-    width: 40%;
-    height: 50%;
-    padding: 3% 5% 3% 5%;
-    text-decoration: none;
-    background-color: #e98a1e;
-    color: #fff;
-    cursor: pointer;
-}
-.licence1:hover, .licence2:hover, .licence3:hover{
-    background-color: #ffff;
-    color: orange;
-    transition: all 850ms ease-in-out;
-    box-shadow: 0 0 10px 0 orange inset, 0 0 10px 4px orange;
-}
-button.licence2{
-    border-radius: 10px;
-    text-align: center;
-    margin-top: 30px;
-    margin-left: 32%;
-    font-size: 15px;
-    display: inline-block;
-    width: 40%;
-    height: 50%;
-    padding: 3% 5% 3% 5%;
-    text-decoration: none;
-    color: #000;
-    cursor: pointer;
-}
-
-button.licence3{
-    border-radius: 10px;
-    text-align: center;
-    margin-top: 30px;
-    margin-left: 32%;
-    font-size: 15px;
-    display: inline-block;
-    width: 40%;
-    height: 50%;
-    padding: 3% 5% 3% 5%;
-    text-decoration: none;
-    color: #000;
-    cursor: pointer;
-}
-.constitutionel {
-    float: right;
-    background-color: #fff;
-    width: 250px;
-    height: 250px;
-    border-radius: 10px;
-    margin-top: 30px;
-    margin-left: 20%;
-    border: 0px solid;
-    box-shadow: 0px 0px 18px grey;
-    background: linear-gradient(180deg, #e98a1e, 0.1%, white);
-}
-a.const-name{
-    color: 0000;
-    position: absolute;
-    font-size: 15px;
-    margin-top: 210px;
-    margin-left: 3.8%;
-    font-weight: bold;
-    text-decoration: none;
-    cursor: pointer;
-    top: 200px;
-}
-.famille {
-    float: right;
-    background-color: #fff;
-    width: 250px;
-    height: 250px;
-    border-radius: 10px;
-    margin-top: 30px;
-    margin-left: 20%;
-    border: 0px solid;
-    box-shadow: 0px 0px 18px grey;
-    background: linear-gradient(180deg, #e98a1e, 0.1%, white);
-}
-a.fam-name{
-    position: absolute;
-    font-size: 15px;
-    margin-top: 210px;
-    margin-left: 3.8%;
-    font-weight: bold;
-    text-decoration: none;
-    cursor: pointer;
-    left: 52.5%;
-    top: 200px;
-}
-.personne {
-    float: right;
-    background-color:#fff;
-    width: 250px;
-    height: 250px;
-    border-radius: 10px;
-    margin-top: 30px;
-    margin-left: 20%;
-    border: 0px solid;
-    box-shadow: 0px 0px 18px grey;
-    background: linear-gradient(180deg, #e98a1e, 0.1%, white);
-}
-a.pers-name{
-    color: 0000;
-    position: absolute;
-    font-size: 15px;
-    margin-top: 210px;
-    margin-left: 3.8%;
-    font-weight: bold;
-    text-decoration: none;
-    cursor: pointer;
-    left: 78.9%;
-    top: 200px;
-}
-.finance {
-    float: right;
-    background-color: #fff;
-    width: 250px;
-    height: 250px;
-    border-radius: 10px;
-    margin-top: 150px;
-    margin-left: 20%;
-    border: 0px solid;
-    box-shadow: 0px 0px 18px grey;
-    background: linear-gradient(180deg, #e98a1e, 0.1%, white);
-}
-a.fin-name{
-    color: 0000;
-    position: absolute;
-    font-size: 15px;
-    margin-top: 26px;
-    margin-left: 3.8%;
-    font-weight: bold;
-    text-decoration: none;
-    cursor: pointer;
-}
-.assurance {
-    float: right;
-    background-color: #fff;
-    width: 250px;
-    height: 250px;
-    border-radius: 10px;
-    margin-top: 150px;
-    margin-left: 20%;
-    border: 0px solid;
-    box-shadow: 0px 0px 18px grey;
-    background: linear-gradient(180deg, #e98a1e, 0.1%, white);
-}
-a.assu-name{
-    color: 0000;
-    position: absolute;
-    font-size: 15px;
-    margin-top: 50px;
-    margin-left: 3.5%;
-    font-weight: bold;
-    text-decoration: none;
-    cursor: pointer;
-}
-.notariat {
-    float: right;
-    background-color: #fff;
-    width: 250px;
-    height: 250px;
-    border-radius: 10px;
-    margin-top: 150px;
-    margin-left: 20%;
-    border: 0px solid;
-    box-shadow: 0px 0px 18px grey;
-    background: linear-gradient(180deg, #e98a1e, 0.1%, white);
-}
-a.not-name{
-    color: 0000;
-    position: absolute;
-    font-size: 15px;
-    margin-top: 50px;
-    margin-left: 5.1%;
-    font-weight: bold;
-    text-decoration: none;
-    cursor: pointer;
-}
-.law{
-    position: relative;
-    width: 60%;
-    height: 55%;
-    top: 15%;
-    left: 19%;
-}
-.family{
-    position: relative;
-    width: 75%;
-    height: 70%;
-    top: 10%;
-    left: 10.5%;
-}
-.people {
-    position: relative;
-    width: 85%;
-    height: 80%;
-    top: 3%;
-    left: 10.5%;
-}
-
-.money{
-    position: relative;
-    width: 75%;
-    height: 70%;
-    top: 5%;
-    left: 10.5%;
-}
-.lock{ 
-    position: relative;
-    width: 65%;
-    height: 60%;
-    top: 6%;
-    left: 16.5%;;
 }
 </style>
