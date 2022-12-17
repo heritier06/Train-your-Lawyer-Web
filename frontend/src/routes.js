@@ -11,6 +11,9 @@ import Pack from '@/pages/Pack.vue';
 import Article from '@/pages/Article.vue';
 import Licence2 from '@/pages/Licence2.vue';
 import Licence3 from '@/pages/Licence3.vue';
+import Penal from '@/pages/Penal.vue';
+import Cours from '@/pages/Cours.vue';
+import Seance1 from '@/pages/Seance1.vue';
 import NotFound from '@/pages/not-found.vue';
 
 export const routes = [
@@ -24,8 +27,11 @@ export const routes = [
   { path: '/TD', component: TD },
   { path: '/Pack', component: Pack },
   { path: '/Article', component: Article },
+  { path: '/Penal', component: Penal },
   { path: '/Licence2', component: Licence2 },
   { path: '/Licence3', component: Licence3 },
+  { path: '/Cours', component: Cours },
+  { path: '/Seance1', component: Seance1 },
   { path: '/:path(.*)', component: NotFound },
 ];
 

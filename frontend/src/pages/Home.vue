@@ -19,7 +19,7 @@
             <p>Des milliers de contenus pédagogiques, créé par des<br>enseignants, qui t’aident à comprendre, apprendre et à<br>t’entraîner dans plus de 26 matières.</p>
         </div>
         <img src="../assets/learn.png" class="learn">
-        <button class="btn-continue">Tester sans inscription</button>
+        <button class="btn-continue" @click="$router.push('/Lesson')">Tester sans inscription</button>
         <h2 class="number"> <span style="font-weight:lighter">+ de</span> 1000 étudiants inscrits</h2>
         <div class="feed">
             <h1 style="font-size: 160%; font-weight: bolder;"> Ce qu'en disent <br /> nos étudiants</h1>

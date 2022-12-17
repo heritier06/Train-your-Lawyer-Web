@@ -35,12 +35,12 @@
         </div>
         <div class="grid grid-flow-row-dense grid-cols-3 grid-rows-3 content">
             <div class="constitutionel">
-                <img src="../assets/fiscal.png" class="law" alt="law"/>
+                <img src="../assets/lock1.png" class="law" alt="law"/>
                 <a class="const-name">Droit Fiscal Général</a>
             </div>
             <div class="famille">
-                <img src="../assets/penal.png" class="family" alt="family"/>
-                <a class="fam-name">Droit Pénal Général</a>
+                <img src="../assets/lock1.png" class="family" alt="family"/>
+                <a class="fam-name" @click="$router.push('/Seance1')">Droit Pénal Général</a>
             </div>
             <div class="personne">
                 <img src="../assets/admin.png" class="people" alt="people"/>

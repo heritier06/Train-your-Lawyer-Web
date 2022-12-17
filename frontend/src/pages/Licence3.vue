@@ -35,15 +35,15 @@
         </div>
         <div class="grid grid-flow-row-dense grid-cols-3 grid-rows-3 content">
             <div class="constitutionel">
-                <img src="../assets/entr.png" class="law" alt="law"/>
+                <img src="../assets/lock1.png" class="law" alt="law"/>
                 <a class="const-name">Fiscalités des Entreprises</a>
             </div>
             <div class="famille">
-                <img src="../assets/sur.png" class="family" alt="family"/>
+                <img src="../assets/lock1.png" class="family" alt="family"/>
                 <a class="fam-name">Droit des Sûretés</a>
             </div>
             <div class="personne">
-                <img src="../assets/gen.png" class="people" alt="people"/>
+                <img src="../assets/lock1.png" class="people" alt="people"/>
                 <a class="pers-name">Droit Fiscal Général</a>
             </div>
             <div class="finance">
