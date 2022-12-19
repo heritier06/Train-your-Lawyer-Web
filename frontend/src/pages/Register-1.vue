@@ -16,11 +16,11 @@
                 <input type="password" name="confirm" id="pass" placeholder="Confirmer le mot de passe" required autofocus/>
                 <a class="number" href='#' @click="nextPage">1/2</a>
                 <!-- <input type="button" value="Next"/> -->
-                <button class="button-s">Suivant</button>
+                <!-- <button class="button-s">Suivant</button> -->
               </div>
               <div v-if="inactive">
                 <img src="../assets/logo.png" className="logo" alt="logo"/>
-                <a to="/Login" className="connect" @click="$router.push('/')">Se connecter</a>
+                <a to="/Login" className="connect" @click="$router.push('/Login')">Se connecter</a>
                 <a to="/" className="account" @click="$router.push('/Register1')">Créer un compte</a>
                 <select name="select" id="select" v-model="year">
                   <option value="">Choisis ton année</option>
@@ -73,11 +73,12 @@
           date_posted: this.date_posted*/
         };
         this.__submitToServer(postData);
-        },
-        async __submitToServer(data) {
-          let res = await axios.post("http://localhost:3000/users/register", data);
-          console.log(JSON.stringify(res.data));
-        }
+      },
+      async __submitToServer(data) {
+        let res = await axios.post("http://localhost:3000/users/register", data);
+        console.log(JSON.stringify(res.data));
+        this.$router.push('/Success');
+      }
     }
   }
 </script>

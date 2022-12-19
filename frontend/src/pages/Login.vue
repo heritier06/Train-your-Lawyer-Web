@@ -24,6 +24,14 @@
 </template>
 
 <script>
+function isEmpty(obj) {
+    for(var prop in obj) {
+        if(obj.hasOwnProperty(prop))
+            return false;
+    }
+
+    return JSON.stringify(obj) === JSON.stringify({});
+}
 import axios from "axios";
 export default {
   data() {
@@ -52,7 +60,18 @@ export default {
     },
     async __submitToServer(data) {
       let res = await axios.post("http://localhost:3000/users/login", data);
-      console.log(JSON.stringify(res.data));
+      let ress = JSON.stringify(res.data);
+      console.log(ress);
+      if (Object.keys(ress).length === 2) {
+        console.log("Connexion failed!");
+        this.email = "";
+        this.password = "";
+        alert("Wrong email or password");
+      }
+      else {
+        console.log("Connexion success!");
+        this.$router.push('/');
+      }
     }
   }
 };
