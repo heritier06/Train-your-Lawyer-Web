@@ -22,12 +22,16 @@ export class UsersController {
         return this.service.getUser(2);
     }
 
-    @Post()
-    async create(@Body() user: newUser): Promise<User> {
+    @Post('login')
+    async login(@Body() user: newUser): Promise<User[]> {
+        console.log(user);
+        return await this.service.checkSubscribed(user.email, user.password);
+    }
+
+    @Post('register')
+    async register(@Body() user: newUser): Promise<User> {
         console.log(user);
         return await this.service.createUser(user);
-        
-        //return user;
     }
 
     @Put()
