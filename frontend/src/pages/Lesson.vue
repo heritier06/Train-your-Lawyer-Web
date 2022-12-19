@@ -39,11 +39,11 @@
                 <a class="const-name">Droit constitutionel</a>
             </div>
             <div class="famille">
-                <img src="../assets/Introduction.png" class="family" alt="family"/>
+                <img src="../assets/intro.png" class="family" alt="family"/>
                 <a class="fam-name">Introduction au Droit</a>
             </div>
             <div class="personne">
-                <img src="../assets/droit_civil.png" class="people" alt="people"/>
+                <img src="../assets/right.png" class="people" alt="people"/>
                 <a class="pers-name">Droit Civil</a>
             </div>
             <div class="finance">
@@ -51,11 +51,11 @@
                 <a class="fin-name">Histoire du Droit</a>
             </div>
             <div class="notariat">
-                <img src="../assets/lock1.png" alt="lock" class="lock">
+                <img src="../assets/polconst.png" alt="lock" class="lock">
                 <a class="not-name">Histoire Politique <br>et Constitutionel</a>
             </div>
             <div class="assurance">
-                <img src="../assets/lock1.png" alt="lock" class="lock">
+                <img src="../assets/socio.png" alt="lock" class="lock">
                 <a class="assu-name">Sociologie Politique</a>
             </div>
         </div>
@@ -140,7 +140,7 @@
 }
 .up-bar {
     float: right;
-    background-color: #ffff;
+    background: linear-gradient(-90deg, #e98a1e, 0.1%, white);
     width: 79.93%;
     height: 13%;
     float: right;

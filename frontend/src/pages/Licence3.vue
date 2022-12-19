@@ -35,27 +35,27 @@
         </div>
         <div class="grid grid-flow-row-dense grid-cols-3 grid-rows-3 content">
             <div class="constitutionel">
-                <img src="../assets/lock1.png" class="law" alt="law"/>
+                <img src="../assets/entreprise.png" class="law" alt="law"/>
                 <a class="const-name">Fiscalités des Entreprises</a>
             </div>
             <div class="famille">
-                <img src="../assets/lock1.png" class="family" alt="family"/>
+                <img src="../assets/surete.png" class="family" alt="family"/>
                 <a class="fam-name">Droit des Sûretés</a>
             </div>
             <div class="personne">
-                <img src="../assets/lock1.png" class="people" alt="people"/>
+                <img src="../assets/fiscal.png" class="people" alt="people"/>
                 <a class="pers-name">Droit Fiscal Général</a>
             </div>
             <div class="finance">
-                <img src="../assets/lock1.png" class="money" alt="money"/>
+                <img src="../assets/public.png" class="money" alt="money"/>
                 <a class="fin-name">Droit des Propriétés Public</a>
             </div>
             <div class="notariat">
-                <img src="../assets/lock1.png" alt="lock" class="lock">
+                <img src="../assets/procedure.png" alt="lock" class="lock">
                 <a class="not-name">Procédure Collective</a>
             </div>
             <div class="assurance">
-                <img src="../assets/lock1.png" alt="lock" class="lock">
+                <img src="../assets/contrat.png" alt="lock" class="lock">
                 <a class="assu-name">Contrats Spéciaux</a>
             </div>
         </div>
@@ -160,7 +160,7 @@
 }
 .up-bar {
     float: right;
-    background-color: #ffff;
+    background: linear-gradient(-90deg, #e98a1e, 0.1%, white);
     width: 79.93%;
     height: 13%;
     float: right;

@@ -35,7 +35,7 @@
                 <p class="mt-12 text-2xl font-bold text-center">Droit Pénal Général</p>
                 <p class="mt-3 text-center text-gray-600 text-sm">0% terminée</p>
                 <hr class="mt-5">
-                <button class="first-lesson">Séance 1 - titre </button>
+                <button class="first-lesson">Séance 1 - Introduction aux infractions </button>
                 <br><br>
                 <div class="flex flex-col option-cours">
                     <button class="c-1">Cours optimisés</button>
@@ -54,71 +54,198 @@
                     <p class="mt-12 ml-5 text-2xl">&#x1F4DA; Cours Optimisés</p>
                     <div class="text">
                     <br>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when a
-                    n unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                    It has survived not only five centuries, but also the leap into electronic typesetting, 
-                    remaining essentially unchanged. It was popularised in the 1960s with the release of 
-                    Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing 
-                    software like Aldus PageMaker including versions of Lorem Ipsum. It is a long 
-                    established fact that a reader will be distracted by the readable content of a page
-                    when looking at its layout. The point of using Lorem Ipsum is that it has a 
-                    more-or-less normal distribution of letters, as opposed to using 'Content here, 
-                    content here', making it look like readable English. Many desktop publishing packages
-                    and web page editors now use Lorem Ipsum as their default model text, and a search 
-                    for 'lorem ipsum' will uncover many web sites still in their infancy.
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when a
-                    n unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                    It has survived not only five centuries, but also the leap into electronic typesetting, 
-                    remaining essentially unchanged. It was popularised in the 1960s with the release of 
-                    Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing 
-                    software like Aldus PageMaker including versions of Lorem Ipsum. It is a long 
-                    established fact that a reader will be distracted by the readable content of a page
-                    when looking at its layout. The point of using Lorem Ipsum is that it has a 
-                    more-or-less normal distribution of letters, as opposed to using 'Content here, 
-                    content here', making it look like readable English. Many desktop publishing packages
-                    and web page editors now use Lorem Ipsum as their default model text, and a search 
-                    for 'lorem ipsum' will uncover many web sites still in their infancy.
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when a
-                    n unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                    It has survived not only five centuries, but also the leap into electronic typesetting, 
-                    remaining essentially unchanged. It was popularised in the 1960s with the release of 
-                    Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing 
-                    software like Aldus PageMaker including versions of Lorem Ipsum. It is a long 
-                    established fact that a reader will be distracted by the readable content of a page
-                    when looking at its layout. The point of using Lorem Ipsum is that it has a 
-                    more-or-less normal distribution of letters, as opposed to using 'Content here, 
-                    content here', making it look like readable English. Many desktop publishing packages
-                    and web page editors now use Lorem Ipsum as their default model text, and a search 
-                    for 'lorem ipsum' will uncover many web sites still in their infancy.
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when a
-                    n unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                    It has survived not only five centuries, but also the leap into electronic typesetting, 
-                    remaining essentially unchanged. It was popularised in the 1960s with the release of 
-                    Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing 
-                    software like Aldus PageMaker including versions of Lorem Ipsum. It is a long 
-                    established fact that a reader will be distracted by the readable content of a page
-                    when looking at its layout. The point of using Lorem Ipsum is that it has a 
-                    more-or-less normal distribution of letters, as opposed to using 'Content here, 
-                    content here', making it look like readable English. Many desktop publishing packages
-                    and web page editors now use Lorem Ipsum as their default model text, and a search 
-                    for 'lorem ipsum' will uncover many web sites still in their infancy.
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when a
-                    n unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                    It has survived not only five centuries, but also the leap into electronic typesetting, 
-                    remaining essentially unchanged. It was popularised in the 1960s with the release of 
-                    Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing 
-                    software like Aldus PageMaker including versions of Lorem Ipsum. It is a long 
-                    established fact that a reader will be distracted by the readable content of a page
-                    when looking at its layout. The point of using Lorem Ipsum is that it has a 
-                    more-or-less normal distribution of letters, as opposed to using 'Content here, 
-                    content here', making it look like readable English. Many desktop publishing packages
-                    and web page editors now use Lorem Ipsum as their default model text, and a search 
-                    for 'lorem ipsum' will uncover many web sites still in their infancy.
+                        Les elements constitutifs de l'infraction
+                        <br>
+                        <br>
+                        Il existe trois types d'infraction:
+                        <br>
+                        <br>
+                        Les elements constitutifs de l'infraction: L'element legal
+                        <br>
+                        <br>
+                        L'infraction n'existe que si elle est prévue par un texte. En effet, en vertu du principe de la
+                        légalité des délits et des peines (ou principe de la légalité criminelle), seule la loi peut déterminer
+                        ce qui constitue une infraction et les peines applicables (article 111-3 du Code pénal).
+                        <br>
+                        <br>
+                        Un élément matériel : il s'agit du comportement réprimé par la loi. Généralement, l'infraction
+                        sera constituée si le comportement a produit le résultat visé par le texte. Mais parfois,
+                        l'infraction sera constituée alors même que le comportement n'a pas produit le résultat redouté.
+                        C'est ce que nous verrons dans la suite de cet article.
+                        <br>
+                        <br>
+                        Un élément moral : il s'agit de l'attitude psychologique de l'auteur du comportement réprimé
+                        par la loi. Selon les infractions, l'auteur peut avoir agi avec intention ou par imprudence. Nous
+                        verrons également cela dans la suite de cet article.
+                        <br>
+                        <br>
+                        📚Les elements constitutifs de l'infraction: L'element materiel
+                        <br>
+                        <br>
+                        Ainsi que nous l'avons exposé ci-dessus, l'élément matériel fait partie des 3 éléments
+                        constitutifs de l'infraction. Il s'agit avant tout du comportement que le texte d'incrimination
+                        réprime.
+                        <br>
+                        <br>
+                        📚Le comportement
+                        <br>
+                        <br>
+                        Les infractions de commission et les infractions d'omission
+                        <br>
+                        <br>
+                        En général, une infraction correspond à un comportement positif (un individu fait ce que la loi
+                        interdit de faire). On parle d'infraction par commission. Exemples : un meurtre, un viol…
+                        <br>
+                        <br>
+                        Mais parfois, l'infraction correspond à une abstention (un individu s'abstient de faire ce que la
+                        loi prescrit). On parle d'infraction par omission. Exemple : l'omission de porter assistance à
+                        une personne en péril (article 223-6 alinéa 2 du Code pénal).
+                        <br>
+                        <br>
+                        ✏ Les infractions instantanées et les infractions continues
+                         <br>
+                         <br>
+                         Les infractions instantanées sont celles qui se réalisent en un trait de temps. Exemple : le vol.
+                         <br>
+                         <br>
+                         ✏ Les infractions continues sont celles dont l'exécution se prolonge dans le temps. Exemple
+                         : le recel (article 321-1 du Code pénal).
+                         <br>
+                         <br>
+                         ⚖️Pour les infractions continues :
+                         <br>
+                         <br>
+                         Le point de départ du délai de prescription de l'action publique est fixé au jour où l'activité
+                        délictueuse prend fin. Exemple : au jour où le receleur se dessaisit de la chose.
+                        Si une loi nouvelle plus sévère entre en vigueur pendant la commission de l'infraction, elle
+                        s'appliquera à cette infraction qui s'est prolongée après l'entrée en vigueur.
+                         <br>
+                         <br>
+                         Les infractions simples, les infractions complexes et les infractions d'habitude
+                         <br>
+                         <br>
+                        Les infractions simples sont celles qui ne sont constituées que par un seul acte. Exemple : le
+                        vol.
+                        <br>
+                        <br>
+                        ⚖️Les infractions complexes sont celles qui sont constituées par plusieurs actes de nature
+                        différente. Exemple : l'escroquerie est constituée par un mensonge ou des manœuvres
+                        frauduleuses, et la remise d'une chose (article 313-1 du Code pénal). La réunion de ces actes
+                        est nécessaire pour constituer l'infraction.
+                        <br>
+                        <br>
+                        ⚖️Les infractions d'habitude sont celles qui sont constituées par la répétition de plusieurs
+                        actes de même nature (commettre l'acte une seule fois ne constitue pas une infraction). Exemple
+                        : l’exercice illégal de la médecine (article L4161-1 du Code de la santé publique). L'infraction
+                        est constituée à partir du deuxième acte médical.
+                        <br>
+                        <br>
+                        ⚖️Pour les infractions complexes et d'habitude, le point de départ du délai de prescription de
+                        l'action publique est fixé au dernier acte.
+                        <br>
+                        <br>
+                        Exemples :
+                        <br>
+                        <br>
+                        📚En matière d'escroquerie, le point de départ du délai de prescription est fixé à la date de la
+                        remise de la chose.
+                        <br>
+                        <br>
+                        📚En matière d'exercice illégal de la médecine, le point de départ du délai de prescription est fixé
+                        au dernier acte médical.
+                        <br>
+                        <br>
+                        ✏️Le résultat du comportement
+                        <br>
+                        <br>
+                        Généralement, l'élément matériel de l'infraction est constitué si le comportement a produit le
+                        résultat visé par le texte d'incrimination. On parle d'infraction consommée.
+                        <br>
+                        <br>
+                        Mais parfois, l'élément matériel de l'infraction est constitué alors même que le comportement
+                        n'a pas produit le résultat visé. On parle d'infraction tentée.
+                        <br>
+                        <br>
+                        ✏️L'infraction consommée
+                        <br>
+                        <br>
+                        Toute infraction vise à protéger une valeur (exemples : la vie, l'intégrité physique…).
+                        Généralement, l'élément matériel de l'infraction suppose une atteinte à cette valeur. Mais
+                        parfois, un comportement simplement susceptible de porter atteinte à cette valeur est suffisant
+                        pour que l'élément matériel soit constitué (sans même que l'atteinte n'ait à se produire). C'est
+                        pourquoi parmi les infractions consommées, on distingue les infractions matérielles des
+                        infractions formelles.
+                        <br>
+                        <br>
+                        Les infractions matérielles sont celles qui requièrent la survenance du résultat redouté.
+                        <br>
+                        <br>
+                        Exemple:
+                        <br>
+                        <br> 
+                        Le meurtre est une infraction matérielle ; il est constitué à la mort de la victime.
+                        Les infractions formelles sont celles qui ne requièrent pas la survenance du résultat redouté.
+                        <br>
+                        <br>
+                        Exemple :
+                        <br>
+                        <br>
+                        L'empoisonnement est une infraction formelle ; le simple fait d'attenter à la vie
+                        d'autrui par l'emploi ou l'administration de substances de nature à entraîner la mort suffit à 
+                        constituer l'infraction (article 221-5 du Code pénal). Ainsi, l'infraction sera consommée même
+                        si la victime survit.
+                        <br>
+                        <br>
+                        Pour les infractions matérielles, le point de départ du délai de prescription de l'action publique
+                        est fixé au jour de la survenance du résultat.
+                        Pour les infractions formelles, le point de départ du délai de prescription de l'action publique
+                        est fixé au jour du comportement.
+                        <br>
+                        <br>
+                        ✏️L’infraction tentée
+                        <br>
+                        <br>
+                        La tentative est l’activité tendant à la commission d’une infraction mais qui n’aboutit pas au
+                        résultat incriminé par la loi
+                        <br>
+                        <br>
+                        La tentative est punissable si 2 conditions sont réunies (article 121-5 du Code pénal).
+                        Il faut d’abord un commencement d’exécution : le simple projet de commettre une infraction
+                        ne suffit pas à constituer la tentative. Il faut que le projet se soit concrétisé par des actes qui ne
+                        soient pas de simples actes préparatoires. Il existe 2 conceptions du commencement
+                        d’exécution:
+                        <br>
+                        <br>
+                        1️⃣La conception objective : Selon la conception objective, le commencement d’exécution
+                        requiert l’accomplissement d’un acte qui est apte à causer le résultat et proche de sa réalisation.
+                        Exemple : Le fait de remettre des fonds à un tueur à gages ayant finalement renoncé à passer à
+                        l’acte « n’a pas pour conséquence directe et immédiate de consommer le crime d’assassinat »
+                        (Cass. crim., 25 oct. 1962, Lacour). Dès lors, il ne s’agit pas d’une tentative de meurtre mais
+                        d’un acte préparatoire.
+                        <br>
+                        2️⃣La conception subjective : Selon la conception subjective, le commencement d’exécution se
+                        caractérise par l’intention de l’agent, sa volonté de commettre l’infraction.
+                        <br>
+                        Au final, la jurisprudence n’a pas tranché entre ces 2 conceptions, et retient une conception
+                        mixte : pour qu’il y ait commencement d’exécution, elle exige des actes qui tendent «
+                        directement au délit avec intention de le commettre » (Cass. crim., 11 juin 1975, n° 75-90.235).
+                        <br>
+                        ✏️La deuxième condition pour que la tentative soit punissable est l’absence de désistement
+                        volontaire : même en cas de commencement d’exécution, la tentative ne sera pas punissable si
+                        l’agent décide de renoncer à commettre l’infraction. Pour que la tentative soit punissable, il faut
+                        donc que la défaillance du résultat résulte de circonstances indépendantes de la volonté de
+                        l’agent. Exemple : en cas d’arrestation par la police.
+                        <br>
+                        A noter que la tentative est également punissable lorsque l’agent n’a simplement pas réussi à
+                        atteindre le résultat. Exemple : l’agent qui tire sur sa cible mais qui la manque.
+                        <br>
+                        <br>
+                        La tentative sera réprimée de manière différente selon le type d’infraction tentée. Ainsi, la
+                        tentative est : toujours punissable si l’infraction tentée est un crime.
+                        Punissable si l’infraction tentée est un délit seulement si le texte le prévoit expressément.
+                        Jamais punissable si l’infraction tentée est une contravention.
+                        L’auteur de la tentative est assimilé à l’auteur de l’infraction ; il encourt la même sanction
+                        (article 121-4 du Code pénal).
                     </div>
                   </div>
             </div>

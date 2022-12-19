@@ -35,11 +35,11 @@
         </div>
         <div class="grid grid-flow-row-dense grid-cols-3 grid-rows-3 content">
             <div class="constitutionel">
-                <img src="../assets/lock1.png" class="law" alt="law"/>
-                <a class="const-name">Droit Fiscal Général</a>
+                <img src="../assets/family.png" class="law" alt="law"/>
+                <a class="const-name">Droit de la famille 2</a>
             </div>
             <div class="famille">
-                <img src="../assets/lock1.png" class="family" alt="family"/>
+                <img src="../assets/penal.png" class="family" alt="family"/>
                 <a class="fam-name" @click="$router.push('/Seance1')">Droit Pénal Général</a>
             </div>
             <div class="personne">
@@ -47,15 +47,15 @@
                 <a class="pers-name">Droit Administratif</a>
             </div>
             <div class="finance">
-                <img src="../assets/lock1.png" class="money" alt="money"/>
+                <img src="../assets/liberty.png" class="money" alt="money"/>
                 <a class="fin-name">Droit des Libertés Fondamental</a>
             </div>
             <div class="notariat">
-                <img src="../assets/lock1.png" alt="lock" class="lock">
+                <img src="../assets/english.png" alt="lock" class="lock">
                 <a class="not-name">Anglais Général</a>
             </div>
             <div class="assurance">
-                <img src="../assets/lock1.png" alt="lock" class="lock">
+                <img src="../assets/money.png" alt="lock" class="lock">
                 <a class="assu-name">Finance et Publique</a>
             </div>
         </div>
@@ -140,7 +140,7 @@
 }
 .up-bar {
     float: right;
-    background-color: #ffff;
+    background: linear-gradient(-90deg, #e98a1e, 0.1%, white);
     width: 79.93%;
     height: 13%;
     float: right;
@@ -148,6 +148,7 @@
     border: 0px solid;
     border-bottom-left-radius: 10px 10px;
     border-bottom-right-radius: 10px 10px;
+
 }
 .left-bar {
     height: 100%;

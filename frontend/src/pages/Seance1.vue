@@ -35,11 +35,11 @@
                 <p class="mt-12 text-2xl font-bold text-center">Droit Pénal Général</p>
                 <p class="mt-3 text-center text-gray-600 text-sm">0% terminée</p>
                 <hr class="mt-5">
-                <button class="first-lesson">Séance 1 - titre </button>
+                <button class="first-lesson">Séance 1 - Les infractions </button>
                 <br>
-                <button class="second-lesson">Séance 2 - titre </button>
+                <button class="second-lesson">Séance 2 - L'element legal </button>
                 <br>
-                <button class="third-lesson">Séance 3 - titre </button>
+                <button class="third-lesson">Séance 3 - L'element materiel </button>
                 <br>
                 <hr class="mt-5">
                 <div class="participants">
@@ -47,10 +47,10 @@
                 </div>
             </div>
             <div class="lesson_">
-                <p class="mt-12 text-xl  text-center">Droit Pénale - Séance 1 - titre</p>
+                <p class="mt-12 text-xl  text-center">Droit Pénale - Les infractions </p>
                 <hr class="mt-5">
                 <button class="en_cours">En cours</button>
-                <p class="ml-6 mt-5 12 text-2xl font-bold">Seance1 - titre</p>
+                <p class="ml-6 mt-5 12 text-2xl font-bold">Seance1 - Introduction aux infractions</p>
                 <p class="ml-6 mt-3 text-gray-600 text-sm">0% terminée</p>
                 <div class="flex flex-col option-cours">
                     <button class="c-1" @click="$router.push('/Cours')">Cours optimisés</button>
