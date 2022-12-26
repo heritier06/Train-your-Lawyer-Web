@@ -23,6 +23,7 @@ import Casrep from '@/pages/Casrep.vue';
 import VidPenal from '@/pages/VidPenal.vue';
 import QcmPenal from '@/pages/QcmPenal.vue';
 import NotFound from '@/pages/not-found.vue';
+import New from '@/pages/New.vue';
 
 export const routes = [
   { path: '/', component: Home },
@@ -49,6 +50,7 @@ export const routes = [
   { path: '/VidPenal', component: VidPenal },
   { path: '/QcmPenal', component: QcmPenal },
   { path: '/:path(.*)', component: NotFound },
+  { path: '/New', component: New },
 ];
 
 export default routes;

@@ -54,27 +54,22 @@
                     <p class="mt-12 ml-5 text-2xl">&#x1F4DA; Introduction au droit Penal</p>
                   </div>
                   <div class="qcm-q1">
-                    <h3>Qu'est ce que le droit pénal?</h3>
-                    <label>
-                        <input type="radio" v-model="question1" value="a">Lorem ipsum
-                    </label><br/>
-                    <label>
-                        <input type="radio" v-model="question1" value="b">Lorem ipsum
-                    </label><br/>
-                    <label>
-                        <input type="radio" v-model="question1" value="c">Lorem ipsum
-                    </label><br/>
-                    <br>
-                    <h3>A quoi ca sert?</h3>
-                    <label>
-                        <input type="radio" name="question2" value="a">Lorem ipsum
-                    </label><br/>
-                    <label>
-                        <input type="radio" name="question2" value="b">Lorem ipsum
-                    </label><br/>
-                    <label>
-                        <input type="radio" name="question2" value="c">Lorem ipsum
-                    </label><br/>
+                    <h1>QCM</h1>
+                    <form>
+                      <!-- Boucle sur chaque question du QCM -->
+                      <div v-for="(question, index) in questions" :key="index">
+                        <h2 class="questions">{{ question.text }}</h2>
+                        <!-- Boucle sur chaque réponse de la question -->
+                        <div v-for="(answer, index) in question.answers" :key="index">
+                          <!-- Utilisez des boutons radio pour permettre à l'utilisateur de sélectionner une réponse -->
+                          <input type="radio" :value="answer" v-model="selectedAnswers[index]" @change="updateAnswer(index, answer)"> {{ answer }}
+                        </div>
+                      </div>
+                      <!-- Bouton pour soumettre le QCM -->
+                      <button @click.prevent="submitQuiz" class="submit">Soumettre</button>
+                    </form>
+                    <!-- Affiche le résultat du QCM une fois soumis -->
+                    <p v-if="submitted">Vous avez obtenu {{ numCorrect }} sur {{ questions.length }} réponses correctes.</p>
                   </div>
             </div>
         </div>
@@ -82,43 +77,71 @@
 </template>
 
 <script>
-    export default {
-        data() {
-            return {
-                question1: 'a',
-                question2: 'b',
-            }
+export default {
+  data() {
+    return {
+      // Définissez les données du QCM ici
+      questions: [
+        {
+          text: 'Comment peut ont définir le droit pénal ?',
+          answers: ['obi', 'obibi', 'goat', 'yeah'],
+          correctAnswer: 'obibi',
         },
-        var: answers = ["A", "C", "B"],
-    tot: answers.length,
-    getCheckedValue(radioName) {
-    var radios = document.getElementsByName(radioName);
-    for (var y = 0; y < radios.length; y++)
-        if (radios[y].checked) return radios[y].value;
+        {
+          text: 'A quoi sert le droit pénal?',
+          answers: ['Blanc', 'Noir', 'Gris', 'Rouge'],
+          correctAnswer: 'Blanc',
+        },
+        // Ajoutez autant de questions que vous le souhaitez...
+      ],
+      // Tableau pour stocker les réponses sélectionnées par l'utilisateur
+      selectedAnswers: [],
+      submitted: false,
+      numCorrect: 0
     }
-    getScore() {
-    var score = 0;
-    for (var i = 0; i < tot; i++)
-        if (getCheckedValue("question" + i) === answers[i]) score += 1;
-    return score;
+  },
+  methods: {
+    updateAnswer(questionIndex, answer) {
+      // Met à jour la réponse sélectionnée pour la question donnée
+      this.selectedAnswers[questionIndex] = answer
+    },
+    submitQuiz() {
+      this.submitted = true
+      // Vérifie les réponses une fois le QCM soumis
+      this.questions.forEach((question, index) => {
+        if (question.correctAnswer === this.selectedAnswers[index]) {
+          this.numCorrect++
+        }
+      })
     }
-    returnScore() {
-    document.getElementById("myresults").innerHTML =
-        "Your score is " + getScore() + "/" + tot;
-    if (getScore() > 2) {
-        console.log("Bravo");
-    }
-    }
+  }
+}
 </script>
 
 <style scoped>
+.my-results {
+    position: absolute;
+    top: 110%;
+    left: 50%;
+}
 
-
+.questions{
+    font-weight: bolder;
+}
+.submit{
+    position: absolute;
+    background-color: #FFC580;
+    border: 1px solid;
+    border-radius: 10px 10px;
+    width: 150px;
+    top: 105%;
+}
 .qcm-q1{
     position:absolute;
-    top:45%;
+    top:40%;
     left: 55%;
     font-size: larger;
+    width: 500px;
 }
 .c-1, .c-3, .c-5{
     background-color: white;
