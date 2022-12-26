@@ -38,9 +38,9 @@
                 <button class="first-lesson">Entrainement</button>
                 <br><br>
                 <div class="flex flex-col option-cours">
-                    <button class="c-2">Dissertation juridique</button>
-                    <button class="c-3">Analyse d'arrêt</button>
-                    <button class="c-4">Cas pratiques</button>
+                    <button class="c-2" @click="$router.push('/Penalent')">Dissertation juridique</button>
+                    <button class="c-3" @click="$router.push('/Penalent2')">Analyse d'arrêt</button>
+                    <button class="c-4" @click="$router.push('/Penalent3')">Cas pratiques</button>
                 </div>
             </div>
             <div class="lesson_">
