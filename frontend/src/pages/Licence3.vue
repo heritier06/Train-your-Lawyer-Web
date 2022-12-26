@@ -4,23 +4,23 @@
             <div class="flex flex-col options">
                 <div class="cours">
                     <img class="img-1" src="../assets/1.png"/>
-                    <button class="btn-01">Cours</button>
+                    <button class="btn-01" @click="$router.push('/Lesson')">Cours</button>
                 </div>
                 <div class="entrainement">
                     <img class="img-2" src="../assets/2.png"/>
-                    <button class="btn-02">Entrainements</button>
+                    <button class="btn-02" @click="$router.push('/Entrainement')">Entrainements</button>
                 </div>
                 <div class="td">
                     <img class="img-3" src="../assets/3.png"/>
-                    <button class="btn-03">Travaux dirigés</button>
+                    <button class="btn-03" @click="$router.push('/TD')">Travaux dirigés</button>
                 </div>
                 <div class="article">
                     <img class="img-4" src="../assets/4.png"/>
-                    <button class="btn-04">Articles</button>
+                    <button class="btn-04" @click="$router.push('/Article')">Articles</button>
                 </div>
                 <div class="pack">
                     <img class="img-5" src="../assets/5.png"/>
-                    <button class="btn-05">Nos packs</button>
+                    <button class="btn-05" @click="$router.push('/Pack')">Nos packs</button>
                 </div>
               </div>
         </div>
@@ -35,27 +35,27 @@
         </div>
         <div class="grid grid-flow-row-dense grid-cols-3 grid-rows-3 content">
             <div class="constitutionel">
-                <img src="../assets/entr.png" class="law" alt="law"/>
+                <img src="../assets/entreprise.png" class="law" alt="law"/>
                 <a class="const-name">Fiscalités des Entreprises</a>
             </div>
             <div class="famille">
-                <img src="../assets/sur.png" class="family" alt="family"/>
+                <img src="../assets/surete.png" class="family" alt="family"/>
                 <a class="fam-name">Droit des Sûretés</a>
             </div>
             <div class="personne">
-                <img src="../assets/gen.png" class="people" alt="people"/>
+                <img src="../assets/fiscal.png" class="people" alt="people"/>
                 <a class="pers-name">Droit Fiscal Général</a>
             </div>
             <div class="finance">
-                <img src="../assets/lock1.png" class="money" alt="money"/>
+                <img src="../assets/public.png" class="money" alt="money"/>
                 <a class="fin-name">Droit des Propriétés Public</a>
             </div>
             <div class="notariat">
-                <img src="../assets/lock1.png" alt="lock" class="lock">
+                <img src="../assets/procedure.png" alt="lock" class="lock">
                 <a class="not-name">Procédure Collective</a>
             </div>
             <div class="assurance">
-                <img src="../assets/lock1.png" alt="lock" class="lock">
+                <img src="../assets/contrat.png" alt="lock" class="lock">
                 <a class="assu-name">Contrats Spéciaux</a>
             </div>
         </div>
@@ -160,7 +160,7 @@
 }
 .up-bar {
     float: right;
-    background-color: #ffff;
+    background: linear-gradient(-90deg, #e98a1e, 0.1%, white);
     width: 79.93%;
     height: 13%;
     float: right;

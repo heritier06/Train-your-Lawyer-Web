@@ -8,7 +8,7 @@
             <div className="formulaire">
                 <form action="/">
                     <img src="../assets/logo.png" className="logo" alt="logo"/>
-                    <a className="connect" @click="$router.push('/')">Se connecter</a>
+                    <a className="connect" @click="$router.push('/Logi')">Se connecter</a>
                     <a className="account" @click="$router.push('/Register1')">Créer un compte</a>
                     <select name="select" id="select">
                         <option value="">Choisis ton année</option>
