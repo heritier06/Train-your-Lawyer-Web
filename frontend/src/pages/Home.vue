@@ -1,10 +1,10 @@
 <template>
-    <div class="Landing">
+    <div class="h-screen Landing">
         <div class="nav-bar">
             <img src="../assets/logo.png" class="logo">
-            <a class="name" href="#">Train your Lawyer</a>
+            <a class="name" href="#">Legal Cours</a>
             <div class="vertically"></div>
-            <a class="acceuil" @click="$router.push('/')">Acceuil</a>
+            <a class="accueil" @click="$router.push('/')">Accueil</a>
             <a class="cours" @click="$router.push('/Lesson')">Cours</a>
             <a class="article" href="#">Article</a>
             <a class="packs" href="#">Nos Packs</a>
@@ -18,7 +18,7 @@
             </svg>
           </div>
         <div class="description">
-                <p>La plateforme qui vous accompagnes dans vos  <span style="color: #E98B1E">études de droit</span>,</p>
+                <p>La plateforme qui vous accompagnes dans vos  <span style="color: #7cc5d6">études de droit</span>,</p>
                 <p >et vous défends contre les examens et les contrôles.</p>
                 <p class="text-2xl">Des milliers de contenus pédagogiques, créé par des enseignants,</p>
                 <p class="text-2xl">qui t’aident à comprendre, apprendre et à t’entraîner dans plus</p> 
@@ -68,12 +68,12 @@
                   </a></li>
               </ul>
               <ul class="menu">
-                <li class="menu__item"><a class="menu__link" href="#">Acceuil</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Accueil</a></li>
                 <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
                 <li class="menu__item"><a class="menu__link" href="#">Equipe</a></li>
                 <li class="menu__item"><a class="menu__link" href="#">Contactez nous</a></li>
                </ul>
-              <p class="text-center">&copy;2022 Train Your Lawyer | Tous les droits sont réservé</p>
+              <p class="text-center">&copy;2022 Legal Cours | Tous les droits sont réservé</p>
         </footer>
 </div>
 </template>
@@ -186,7 +186,7 @@
     position: absolute;
     top: 230%;
     box-shadow: #000;
-    background-color: #eea55b;
+    background-color: #539BAB;
     width: 100%;
     padding: 20px 50px;
     display: flex;
@@ -197,7 +197,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  fill: #eea55b;
+  fill: #539BAB;
   width: 500px;
   z-index: -1;
   animation: move 10s ease-in-out infinite;
@@ -240,11 +240,11 @@
     }
     1%, 99%{
         opacity: 1;
-      border-right: 1px solid orange;
+      border-right: 1px solid #7cc5d6;
     }
     100%{
         opacity: 1;
-      border-right: 1px solid orange;
+      border-right: 1px solid #7cc5d6;
     }
   }
 
@@ -253,107 +253,13 @@
     width: 0;
   }
   1%, 99%{
-    border-right: 1px solid orange;
+    border-right: 1px solid #7cc5d6;
   }
   100%{
     border-right: none;
   }
 }
 
-.book{
-    position: absolute;
-    height: 60%;
-    width: 40%;
-    margin-left: 60%;
-    top: 155%;
-}
-.another{
-    position: absolute;
-    top: 165%;
-    margin-left: 4%;
-    width: 450px;
-    height: auto;
-}
-
-.check-icon{
-    position: absolute;
-    height: 30%;
-}
-.check-icon2{
-    position: absolute;
-    top: 93%;
-    height: 30%;
-}
-.check1{
-    font-size: smaller;
-    margin-left: 18%;
-    top: 30%;
-}
-.check2{
-    font-size: smaller;
-    margin-left: 18%;
-    top: 93%;
-}
-.lexique{
-    top: 10%;
-    font-weight: bolder;
-}
-.optimise{
-    position: absolute;
-    top: 18%;
-    margin-left: 22%;
-    font-weight: bolder;
-    font-size: larger;
-}
-.dot{
-    border-radius: 50%;
-    height: 50px;
-    width: 50px;
-    display: inline-block;
-    background-color: #E98B1E;
-    margin-left: 4%;
-}
-
-
-.user_icon{
-    position: absolute;
-    height: 27%;
-    margin-left: 8%;
-}
-.line{
-    border:0.5px solid lightslategrey;
-}
-
-.user{
-    margin-left: 20%;
-    font-size: smaller;
-
-}
-.feedback{
-    position: absolute;
-    top: 105%;
-    margin-left: 55%;
-    height: auto + 20%;
-}
-.feed {
-    position: absolute;
-    top: 112%;
-    margin-left: 3%;
-    width: 50%;
-    height:auto;
-}
-.stars{
-    position: absolute;
-    height: 130%;
-    margin-left: 0.1%;
-}
-.number {
-    position: absolute;
-    font-weight: bold;
-    top: 105%;
-    font-size: 145%;
-    margin-left: 3%;
-}
 .btn-continue {
     position: absolute;
     top: 55%;
@@ -364,7 +270,7 @@
     padding: 1.5%;
     padding-left: 9%;
     padding-right: 9%;
-    background-color: #E98B1E;
+    background-color: #7cc5d6;
     border-radius: 15px;
 }
 .learn {
@@ -395,7 +301,7 @@
     font-size: 30px;
     width: 70%;
 }
-.acceuil{
+.accueil{
     position: absolute;
     top: 20px;
     left: 280px;
@@ -420,7 +326,7 @@
     left: 800px;
     font-size: 18px;
 }
-.acceuil:hover, .cours:hover, .article:hover, .packs:hover {
+.accueil:hover, .cours:hover, .article:hover, .packs:hover {
     font-weight: bold;
 }
 .btn-try{
@@ -434,13 +340,13 @@
     border-radius: 15px;
 }
 .btn-try:hover {
-    background: #E98B1E;
+    background: #7cc5d6;
     color: #fff;
     border-radius: 15px;
-    box-shadow: 0 0 5px #E98B1E,
-                0 0 25px #E98B1E,
-                0 0 50px #E98B1E,
-                0 0 100px #E98B1E;
+    box-shadow: 0 0 5px #7cc5d6,
+                0 0 25px #7cc5d6,
+                0 0 50px #7cc5d6,
+                0 0 100px #7cc5d6;
 }
 .btn-connect{
     position: absolute;
@@ -450,17 +356,17 @@
     padding: 1%;
     padding-left: 2%;
     padding-right: 2%;
-    background-color: #E98B1E;
+    background-color: #7cc5d6;
     border-radius: 15px;
 }
 .btn-connect:hover {
-    background: #E98B1E;
+    background: #7cc5d6;
     color: #fff;
     border-radius: 15px;
-    box-shadow: 0 0 5px #E98B1E,
-                0 0 25px #E98B1E,
-                0 0 50px #E98B1E,
-                0 0 100px #E98B1E;
+    box-shadow: 0 0 5px #7cc5d6,
+                0 0 25px #7cc5d6,
+                0 0 50px #7cc5d6,
+                0 0 100px #7cc5d6;
 }
 .vertically-2 {
     border-left: 1px solid black;

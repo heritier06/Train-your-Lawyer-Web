@@ -28,33 +28,38 @@
             <img src="../assets/logo.png" class="logo" alt="logo" @click="$router.push('/')"/>
             <a class="title" @click="$router.push('/')">Train your lawyer</a>
         </div>
-        <div class="grid grid-flow-row-dense grid-cols-1 grid-rows-1 formation">
-            <p class="text-xl mt-12 font-bold text-center">Sessions d'entraînements</p>
-        </div>
-        <div class="grid grid-flow-row-dense grid-cols-1 grid-rows-3 content">
-            <div class="first-training">
-                <div class="brd-1">
-                    <img class ="trn-01" src="../assets/penal.png" @click="$router.push('/Penalent')">
+        
+        <div class="grid grid-flow-row-dense grid-cols-2 grid-rows-1 content">
+            <div class="lesson_name">
+                <button class="text-center licence1" @click="$router.push('/Entrainement')">Entrainement</button>
+                <p class="mt-12 text-2xl font-bold text-center">Droit Pénal Général</p>
+                <p class="mt-3 text-center text-gray-600 text-sm">0% terminée</p>
+                <hr class="mt-5">
+                <button class="first-lesson">Entrainement</button>
+                <br><br>
+                <div class="flex flex-col option-cours">
+                    <button class="c-2" @click="$router.push('/Penalent')">Dissertation juridique</button>
+                    <button class="c-3" @click="$router.push('/Penalent2')">Analyse d'arrêt</button>
+                    <button class="c-4" @click="$router.push('/Penalent3')">Cas pratiques</button>
                 </div>
-                <p class="ml-12 text-xl mt-12 font-bold text-center" @click="$router.push('/Penalent')">
-                    Droit Penal General - Session d’entraînement
-                </p>
             </div>
-            <div class="second-training">
-                <div class="brd-2">
-                    <img class ="trn-02" src="../assets/family.png">
-                </div>
-                <p class="ml-12 text-xl mt-12 font-bold text-center">
-                    Droit de la famille 1 - Session d’entraînement
-                </p>
-            </div>
-            <div class="third-training">
-                <div class="brd-3">
-                    <img class ="trn-03" src="../assets/admin.png">
-                </div>
-                <p class="ml-12 text-xl mt-12 font-bold text-center">
-                    Droit administratif 2 - Session d’entraînement
-                </p>
+            <div class="lesson_">
+                
+                <div class="scroll">
+                    <p class="mt-12 text-xl  text-center">&#x1F468;&#x1F3FE;&#x200D;&#x2696;&#xFE0F; Entrainement Droit pénal general - Dissertation Juridique</p>
+                    <hr class="mt-5">
+                    <p class="mt-12 ml-5 text-2xl">Sujet de Dissertation</p>
+                    <div class="text">
+                    <br>
+                    ⚖️  Le principe de légalité s’impose-t-il au juge répressif ?
+                    <br>
+                    <br>
+                        Veuillez saisir votre réponse ci dessous : 
+                    <br>
+                    </div>
+                    <textarea class="box">
+                    </textarea>
+                  </div>
             </div>
         </div>
     </div>
@@ -62,26 +67,68 @@
 
 <style scoped>
 
-.brd-1, .brd-2, .brd-3{
-    height: 150px;
-    width: 250px;
-    background-color: #ee9f45;
+.box{
+    position: relative;
+    margin-top: 50px;
+    width: 650px;
+    height: 300px;
+    border-radius: 10px 10px;
+    border: 1px solid;
+
 }
-.trn-01, .trn-02, .trn-03{
-    height: 100%;   
+.c-3{
+    background-color: white;
 }
-.first-training, .second-training, .third-training{
-    display: inline-flex;
-    float: right;
-    background-color: #fff;
-    width: 1000px;
-    height: 150px;
+
+.c-2, .c-4{
+    background-color: #F1A244;
+}
+.c-2, .c-3, .c-4{
+    text-align: center;
+    margin-left: 10%;
+    font-size: 15px;
+    display: inline-block;
+    width: 80%;
+    height: 8%;
+    padding: 3% 5% 3% 5%;
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+.scroll {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 20px;
+}
+.lesson_{
+    border-radius: 10px 10px;
+    margin-left: -20%;
+}
+.first-lesson, .second-lesson, .third-lesson {
+    margin-left: 10%;
+    margin-top: 10%;
+}
+button.licence1{
     border-radius: 10px;
-    margin-top: 35px;
-    margin-left: 5%;
-    border: 0px solid;
-    box-shadow: 0px 0px 18px grey;
-    background: linear-gradient(180deg, #e98a1e, 0.1%, white);
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 30%;
+    font-size: 15px;
+    display: inline-block;
+    width: 40%;
+    height: 8%;
+    padding: 3% 5% 3% 5%;
+    text-decoration: none;
+    background-color: #e98a1e;
+    color: #fff;
+    cursor: pointer;
+}
+.lesson_name{
+    width: 80%;
+    border-radius: 10px 10px;
+    background-color: #FFC580;
 }
 .entrainement {
     margin-top: 5%;
@@ -155,7 +202,7 @@
 .content {
     float: right;
     width: 79.93%;
-    height: 70%;
+    height: 87%;
 }
 .up-bar {
     float: right;

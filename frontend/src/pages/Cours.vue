@@ -38,9 +38,9 @@
                 <button class="first-lesson">Séance 1 - Introduction aux infractions </button>
                 <br><br>
                 <div class="flex flex-col option-cours">
-                    <button class="c-1">Cours optimisés</button>
+                    <button class="c-1" @click="$router.push('/Seance1')">Cours optimisés</button>
                     <button class="c-2">Fiche de révision</button>
-                    <button class="c-3">Vidéo de cours</button>
+                    <button class="c-3" @click="$router.push('/VidPenal')">Vidéo de cours</button>
                     <button class="c-4">Mind map</button>
                     <button class="c-5">Flash cards</button>
                     <button class="c-6">QCM</button>
@@ -49,7 +49,7 @@
             <div class="lesson_">
                 
                 <div class="scroll">
-                    <p class="mt-12 text-xl  text-center">&#x1F468;&#x1F3FE;&#x200D;&#x2696;&#xFE0F; Droit Pénale - Séance 1 - titre</p>
+                    <p class="mt-12 text-xl  text-center">&#x1F468;&#x1F3FE;&#x200D;&#x2696;&#xFE0F; Droit Pénale - Séance 1 - Les infractions</p>
                     <hr class="mt-5">
                     <p class="mt-12 ml-5 text-2xl">&#x1F4DA; Cours Optimisés</p>
                     <div class="text">

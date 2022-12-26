@@ -9,7 +9,7 @@
             <form action="/" @submit.prevent="createPost">
               <div v-if="active">
                 <img src="../assets/logo.png" className="logo" alt="logo"/>
-                <a to="/Login" className="connect" @click="$router.push('/')">Se connecter</a>
+                <a to="/Login" className="connect" @click="$router.push('/Login')">Se connecter</a>
                 <a to="/" className="account" @click="$router.push('/Register1')">Créer un compte</a>
                 <input type="email" name="e-mail" id="mail" placeholder="E-mail" v-model="email" required autofocus/>
                 <input type="password" name="password" id="pass" placeholder="Mot de passe" v-model="password" required autofocus/>

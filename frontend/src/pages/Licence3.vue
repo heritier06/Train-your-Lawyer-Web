@@ -4,23 +4,23 @@
             <div class="flex flex-col options">
                 <div class="cours">
                     <img class="img-1" src="../assets/1.png"/>
-                    <button class="btn-01">Cours</button>
+                    <button class="btn-01" @click="$router.push('/Lesson')">Cours</button>
                 </div>
                 <div class="entrainement">
                     <img class="img-2" src="../assets/2.png"/>
-                    <button class="btn-02">Entrainements</button>
+                    <button class="btn-02" @click="$router.push('/Entrainement')">Entrainements</button>
                 </div>
                 <div class="td">
                     <img class="img-3" src="../assets/3.png"/>
-                    <button class="btn-03">Travaux dirigés</button>
+                    <button class="btn-03" @click="$router.push('/TD')">Travaux dirigés</button>
                 </div>
                 <div class="article">
                     <img class="img-4" src="../assets/4.png"/>
-                    <button class="btn-04">Articles</button>
+                    <button class="btn-04" @click="$router.push('/Article')">Articles</button>
                 </div>
                 <div class="pack">
                     <img class="img-5" src="../assets/5.png"/>
-                    <button class="btn-05">Nos packs</button>
+                    <button class="btn-05" @click="$router.push('/Pack')">Nos packs</button>
                 </div>
               </div>
         </div>

@@ -35,7 +35,7 @@
         </div>
         <div class="grid grid-flow-row-dense grid-cols-3 grid-rows-3 content">
             <div class="constitutionel">
-                <img src="../assets/law.png" class="law" alt="law"/>
+                <img src="../assets/const.png" class="law" alt="law"/>
                 <a class="const-name">Droit constitutionel</a>
             </div>
             <div class="famille">
@@ -43,7 +43,7 @@
                 <a class="fam-name">Introduction au Droit</a>
             </div>
             <div class="personne">
-                <img src="../assets/right.png" class="people" alt="people"/>
+                <img src="../assets/civil.png" class="people" alt="people"/>
                 <a class="pers-name">Droit Civil</a>
             </div>
             <div class="finance">
