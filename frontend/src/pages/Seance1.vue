@@ -58,7 +58,7 @@
                     <button class="c-3" @click="$router.push('/VidPenal')">Vidéo de cours</button>
                     <button class="c-4">Mind map</button>
                     <button class="c-5">Flash cards</button>
-                    <button class="c-6">QCM</button>
+                    <button class="c-6" @click="$router.push('/QcmPenal')">QCM</button>
                 </div>
             </div>
         </div>

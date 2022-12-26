@@ -59,6 +59,7 @@
                     </div>
                     <textarea class="box">
                     </textarea>
+                    <button class="text-center rep" @click="$router.push('/Dissertrep')">Voir réponses</button>
                   </div>
             </div>
         </div>
@@ -66,6 +67,21 @@
 </template>
 
 <style scoped>
+button.rep{
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 30%;
+    font-size: 15px;
+    display: inline-block;
+    width: 40%;
+    height: 8%;
+    padding: 3% 3% 5% 3%;
+    text-decoration: none;
+    background-color: #e98a1e;
+    color: #fff;
+    cursor: pointer;
+}
 
 .box{
     position: relative;
