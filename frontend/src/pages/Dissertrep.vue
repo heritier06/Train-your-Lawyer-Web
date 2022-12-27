@@ -48,17 +48,18 @@
                 <div class="scroll">
                     <p class="mt-12 text-xl  text-center">&#x1F468;&#x1F3FE;&#x200D;&#x2696;&#xFE0F; Entrainement Droit pénal general - Dissertation Juridique</p>
                     <hr class="mt-5">
-                    <p class="mt-12 ml-5 text-2xl">Resultat de Dissertation</p>
+                    <family-name Times New Roman></family-name><p class="mt-12 ml-5 text-2xl">📝Resultat de Dissertation</p>
                     <div class="text">
                     <br>
+                    <div class="az">
+                    <family-name Times New Roman>Introduction (À faire)</family-name>    
+                    </div>
                     <br>
-                    Introduction (À faire)
+                   <strong> 1️⃣- Les pouvoirs du juge répressif</strong>
                     <br>
                     <br>
-                    I- Les pouvoirs du juge répressif
+                    <i> A- Le juge répressif ne peut apprécier la constitutionnalité des lois </i>
                     <br>
-                    <br>
-                    A- Le juge répressif ne peut apprécier la constitutionnalité des lois
                     <br>
                     Le contrôle de la légalité d’un texte pénal peut porter soit sur le fond du droit (contrôle de la légalité interne), soit sur le respect des formes (contrôle de la légalité externe). S’agissant des lois et autres textes ayant valeur législative :
                     <br>
@@ -71,26 +72,30 @@
                     De ce fait, si le juge admet, l’exception, cette solution ne vaut qu’à l’égard des parties aux procès. Cela signifie que si d’autres personnes sont poursuivies sur la base du même texte et si l’exception d’inégalité n’est pas soulevée, elles pourraient être condamnées.
                     <br>
                     <br>
-                    B- Qu’en est-il des règlements ?
+                    <i> B- Qu’en est-il des règlements ? </i>
+                    <br>
                     <br>
                     En ce qui concerne les règlements, la même solution vaudrait pour le contrôle de la légalité externe. Par contre pour le pouvoir de contrôle de la légalité interne, le problème reste entier. La jurisprudence a, dès avant 1960 reconnu par un décret, un tel pouvoir au juge pénal français.
                     <br>
                     <br>
                     <br>
-                    II- Les devoirs du juge répressif
+                   <strong> 2️⃣- Les devoirs du juge répressif</strong>
                     <br>
                     <br>
-                    A- Le juge répressif doit respecter les principes régissant l’application de la loi pénale dans le temps.
+                    <i>A- Le juge répressif doit respecter les principes régissant l’application de la loi pénale dans le temps. </i>
+                    <br>
                     <br>
                     Il ne peut faire rétroagir une loi pénale plus sévère (Art. 20 C.P). Il doit appliquer immédiatement une loi pénale plus douce.
                     <br>
                     <br>
-                    B- Le juge répressif doit appliquer strictement la loi pénale
+                    <i> B- Le juge répressif doit appliquer strictement la loi pénale </i>
+                    <br>
                     <br>
                     Il doit procéder à une confrontation rigoureuse entre les faits reproches et le texte qui est applicable. Si les faits ne sont susceptibles d’aucune qualification pénale, le juge ne peut prononcer aucune sanction.
                     <br>
                     <br>
-                    C- Il doit interpréter strictement la loi pénale
+                    <i> C- Il doit interpréter strictement la loi pénale </i>
+                    <br>
                     <br>
                     Il signifie qu’en présence d’un acte A, non expressément prévu et réprimé par la loi pénale, mais analogue (ressemblant beaucoup) à un autre acte B, constituant une infraction, le juge ne peut appliquer, les pénalités prévues pour l’acte B.
                     En effet, l’extension d’un texte à une situation voisine mais non expressément prévue, constitue un raisonnement par analogue. Celui-ci est formellement interdit par l’article 13 alinéa 2 du Code pénal.
@@ -105,7 +110,8 @@
                     En effet, il est nécessaire d’adapter la loi répressive aux formes nouvelles de délinquance, alors même que le législateur lorsqu’il l’édictait, en ignorait les effets du progrès.
                     <br>
                     <br>
-                    D- Le juge répressif ne peut prononcer que les peines prévues par la loi, dans les limites et les conditions légales.
+                   <i> D- Le juge répressif ne peut prononcer que les peines prévues par la loi, dans les limites et les conditions légales.</i>
+                    <br>
                     <br>
                     Art. 19 C.P : « Nul ne peut être poursuivi ou jugé en raison d’un fait qui aux termes d’une disposition nouvelle ne constitue plus une infraction ».
                     Si antérieurement à cette disposition, des peines et mesures de sûreté ont été prononcées pour ce fait, il est mis fin à leur exécution à l’exception de l’internement dans une maison de santé et de la confiscation-mesure de police.
@@ -119,6 +125,10 @@
 
 <style scoped>
 
+.az {
+    position: relative;
+    margin-left: 35%;
+}
 .box{
     position: relative;
     margin-top: 50px;

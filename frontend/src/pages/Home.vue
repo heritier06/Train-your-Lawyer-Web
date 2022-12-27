@@ -1,44 +1,54 @@
 <template>
   <div class="Landing">
-      <div class="nav-bar">
+        <div class="nav-bar">
           <img src="../assets/logo.png" class="logo">
-          <a class="name" href="#">Train your Lawyer</a>
-          <div class="vertically"></div>
-          <a class="acceuil" @click="$router.push('/')">Accueil</a>
-          <a class="cours" @click="$router.push('/Lesson')">Cours</a>
-          <a class="article" href="#">Article</a>
-          <a class="packs" href="#">Nos Packs</a>
-          <button class="btn-try">Essayer</button>
-          <button class="btn-connect" @click="$router.push('/Login')">Connexion</button>
-          <div class="vertically-2"></div>
-      </div>
-      <div class="blob">
+              <a class="name" href="#">Train your Lawyer</a>
+              <div class="vertically"></div>
+              <a class="acceuil" @click="$router.push('/')">Accueil</a>
+              <a class="cours" @click="$router.push('/Lesson')">Cours</a>
+              <a class="article" href="#">Article</a>
+              <a class="packs" href="#">Nos Packs</a>
+              <button class="btn-try">Essayer</button>
+              <button class="btn-connect" @click="$router.push('/Login')">Connexion</button>
+              <div class="vertically-2"></div>
+        </div>
+        <div class="description">
+          <p>La plateforme qui vous accompagnes dans vos  <span style="color: #E98B1E">études de droit</span>,</p>
+          <p >et vous défends contre les examens et les contrôles.</p>
+          <p class="text-2xl">Des centaines de contenus pédagogiques, créé par des enseignants,</p>
+          <p class="text-2xl">qui t’aident à comprendre, apprendre et à t’entraîner dans plus</p> 
+          <p class="text-2xl">de 18 matières.</p>
+        </div>
+        <div class="blob">
           <svg xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 350">
           <path d="M156.4,339.5c31.8-2.5,59.4-26.8,80.2-48.5c28.3-29.5,40.5-47,56.1-85.1c14-34.3,20.7-75.6,2.3-111  c-18.1-34.8-55.7-58-90.4-72.3c-11.7-4.8-24.1-8.8-36.8-11.5l-0.9-0.9l-0.6,0.6c-27.7-5.8-56.6-6-82.4,3c-38.8,13.6-64,48.8-66.8,90.3c-3,43.9,17.8,88.3,33.7,128.8c5.3,13.5,10.4,27.1,14.9,40.9C77.5,309.9,111,343,156.4,339.5z"/>
           </svg>
         </div>
-      <div class="description">
-              <p>La plateforme qui vous accompagnes dans vos  <span style="color: #E98B1E">études de droit</span>,</p>
-              <p >et vous défends contre les examens et les contrôles.</p>
-              <p class="text-2xl">Des centaines de contenus pédagogiques, créé par des enseignants,</p>
-              <p class="text-2xl">qui t’aident à comprendre, apprendre et à t’entraîner dans plus</p> 
-              <p class="text-2xl">de 18 matières.</p>
-      </div>
-      <img src="../assets/learn.png" class="learn">
-      <button class="mt-2 btn-continue" @click="$router.push('/Lesson')">Je teste</button>
-      <div class="cours-opt">
-      </div>
-      <div class="quiz">
-      </div>
-      <div class="mind-map">
-      </div>
-      <div class="ficher-revision">
-      </div>
-      <div class="flash-cards">
-      </div>
-      <div class="video-cours">
-      </div>
-      <footer class="footer">
+        <div>
+          <img src="../assets/learn.png" class="learn">
+        </div>
+        <button class="mt-2 btn-continue" @click="$router.push('/Lesson')">Je teste</button>
+        <img class="cours-ill scale-50" src="../assets/cours-ill.png">
+        <p class="font-bold md:text-center cours-text">
+          Train Your Lawyer contient une multitude<br>de cours certifiés, des fiches de révision, de flash cards, <br> de mind map ainsi des QCM de la licence 1 en licence 3<br>vous permettant d’approfondir vos acquis et connaissances.
+        </p>
+        <img class="train-ill scale-50" src="../assets/train.png">
+        <p class="font-bold md:text-center train-text">
+          Elle dispose également d'exercices corrigés<br> et des cas pratiques <br>vous permettant de consolider vos connaissances.
+        </p>
+        <img class="article-ill scale-50" src="../assets/article-ill.png">
+        <p class="font-bold md:text-center article-text">
+          Vous retrouverez également<br>des artciles qui pourront répondres à vos differentes<br> questions dans le domaine du droit et vous informer <br>de nouvelles lois sorties au Bénin ainsi que dans l'UEMOA.
+        </p>
+        <img class="td-ill scale=50" src="../assets/td-fill.png">
+        <p class="font-bold md:text-center td-text">
+          Aussi des travaux dirigés menés<br>par des professeurs certifiés et des étudiants ayant déjà finis <br>et désirant d'aider leurs camarades en cours d'études. 
+        </p>
+        <img class="pack-ill scale-50" src="../assets/pack-ill.png">
+        <p class="font-bold md:text-center pack-text">
+          Nous disposons de deux packs l'un premium qui vous propose <br> un accès restreint et l'autre pro qui vous donne <br> un accès illimité aux contenus de la plateforme.
+        </p>
+        <footer class="footer">
           <div class="waves">
               <div class="wave" id="wave1"></div>
               <div class="wave" id="wave2"></div>
@@ -80,6 +90,67 @@
 
 <style scoped>
 
+@keyframes gelatine {
+  from, to { transform: scale(0.5, 0.5); }
+  25% { transform: scale(0.5, 0.6); }
+  50% { transform: scale(0.5, 0.5); }
+  75% { transform: scale(0.5, 0.6); }
+}
+.cours-ill {
+  position: relative;
+  top: 300px;
+  left: -20%;
+  animation: gelatine 3.5s infinite;
+}
+.train-ill{
+  position: relative;
+  top: -300px;
+  right: -20%;
+  animation: gelatine 3.5s infinite;
+}
+.article-ill{
+  position: relative;
+  top: -900px;
+  left: -20%;
+  animation: gelatine 3.5s infinite;
+}
+.td-ill{
+  position: relative;
+  top: -1600px;
+  right: -20%;
+  animation: gelatine 3.5s infinite;
+}
+.pack-ill{
+  position: relative;
+  top: -2100px;
+  left: -20%;
+  animation: gelatine 3.5s infinite;
+}
+.train-text{
+  position: relative;
+  top: -1050px;
+  left: -30%;
+}
+.cours-text{
+  position: relative;
+  top: -450px;
+  right: -30%;
+}
+.article-text{
+  position: relative;
+  top: -1650px;
+  right: -30%;
+}
+.td-text{
+  position: relative;
+  top: -2350px;
+  left: -30%;
+}
+.pack-text{
+  position: relative;
+  top: -2850px;
+  right: -30%;
+}
 .wave {
 position: absolute;
 top: -100px;
@@ -183,8 +254,8 @@ font-weight: 300;
 font-weight: bold;
 }
 .footer {
-  position: absolute;
-  top: 230%;
+  margin-top: -150%;
+  position: relative;
   box-shadow: #000;
   background-color: #eea55b;
   width: 100%;
