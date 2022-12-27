@@ -5,12 +5,15 @@ import '@/assets/styles/main.css';
 import '@/assets/styles/tailwind.css';
 import App from '@/app.vue';
 import { routes } from '@/routes.js';
+// import BootstrapVue from 'bootstrap-vue/dist/bootstrap-vue.esm';
+// import 'bootstrap-vue/dist/bootstrap-vue.css';
+// import 'bootstrap/dist/css/bootstrap.css';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.VITE_BASE_PUBLIC_PATH),
   routes,
 });
-
 const app = createApp(App);
 app.use(router);
 app.mount('#app');
+// Vue.use(BootstrapVue);
