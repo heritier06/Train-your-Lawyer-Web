@@ -225,4 +225,7 @@ button.en_cours{
     color: #fff;
     cursor: pointer;
 }
+a, button {
+  cursor: pointer;
+}
 </style>

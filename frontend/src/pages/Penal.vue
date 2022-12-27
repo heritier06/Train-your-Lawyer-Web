@@ -274,4 +274,7 @@ a.seance4{
     top: 27%;
     left: 53%;
 }
+a, button {
+  cursor: pointer;
+}
 </style>

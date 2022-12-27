@@ -117,4 +117,7 @@ a.button:hover {
   75% { transform: translateX(-5%) rotate(-1deg); }
   100% { transform: translateX(0%); }
 }
+a, button {
+  cursor: pointer;
+}
 </style>

@@ -405,4 +405,7 @@ transition: transform 0.25s ease-out;
 transform: scaleX(1);
 transform-origin: bottom left;
 }
+a, button {
+  cursor: pointer;
+}
 </style>

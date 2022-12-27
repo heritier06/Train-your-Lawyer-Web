@@ -254,4 +254,7 @@ a.title{
     left: 380px;
     font-weight: bold;
 }
+a, button {
+  cursor: pointer;
+}
 </style>
