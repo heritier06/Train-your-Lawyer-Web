@@ -258,4 +258,7 @@ button.button-s:hover {
               0 0 100px #f47303;
   top: 3px;
 }
+a, button {
+  cursor: pointer;
+}
 </style>

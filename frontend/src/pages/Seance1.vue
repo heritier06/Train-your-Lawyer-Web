@@ -58,7 +58,7 @@
                     <button class="c-3" @click="$router.push('/VidPenal')">Vidéo de cours</button>
                     <button class="c-4">Mind map</button>
                     <button class="c-5">Flash cards</button>
-                    <button class="c-6">QCM</button>
+                    <button class="c-6" @click="$router.push('/QcmPenal')">QCM</button>
                 </div>
             </div>
         </div>
@@ -178,7 +178,7 @@ button.licence1{
 }
 .up-bar {
     float: right;
-    background-color: #ffff;
+    background: linear-gradient(-90deg, #e98a1e, 0.1%, white);
     width: 79.93%;
     height: 13%;
     float: right;
@@ -224,5 +224,8 @@ button.en_cours{
     background-color: #e98a1e;
     color: #fff;
     cursor: pointer;
+}
+a, button {
+  cursor: pointer;
 }
 </style>
