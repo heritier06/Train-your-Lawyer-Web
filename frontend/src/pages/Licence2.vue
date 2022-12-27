@@ -33,31 +33,32 @@
             <button class="licence2" @click="$router.push('/Licence2')">Licence 2</button>
             <button class="licence3" @click="$router.push('/Licence3')">Licence 3</button>
         </div>
+
         <div class="grid grid-flow-row-dense grid-cols-3 grid-rows-3 content">
-            <div class="constitutionel">
+            <a class="constitutionel">
                 <img src="../assets/family.png" class="law" alt="law"/>
-                <a class="const-name">Droit de la famille 2</a>
-            </div>
-            <div class="famille">
+                <p class="mt-5 font-bold text-center">Droit de la famille 2</p>
+            </a>
+            <a class="famille" @click="$router.push('/Seance1')">
                 <img src="../assets/penal.png" class="family" alt="family"/>
-                <a class="fam-name" @click="$router.push('/Seance1')">Droit Pénal Général</a>
-            </div>
-            <div class="personne">
+                <p class="mt-5 font-bold text-center">Droit Pénal Général</p>
+            </a>
+            <a class="personne">
                 <img src="../assets/admin.png" class="people" alt="people"/>
-                <a class="pers-name">Droit Administratif</a>
-            </div>
-            <div class="finance">
+                <p class="mt-5 font-bold text-center">Droit Administratif</p>
+            </a>
+            <a class="finance">
                 <img src="../assets/liberty.png" class="money" alt="money"/>
-                <a class="fin-name">Droit des Libertés Fondamental</a>
-            </div>
-            <div class="notariat">
+                <p class="mt-5 font-bold text-center">Droit des Libertés Fondamental</p>
+            </a>
+            <a class="notariat">
                 <img src="../assets/english.png" alt="lock" class="lock">
-                <a class="not-name">Anglais Général</a>
-            </div>
-            <div class="assurance">
+                <p class="mt-5 font-bold text-center">Anglais Général</p>
+            </a>
+            <a class="assurance">
                 <img src="../assets/money.png" alt="lock" class="lock">
-                <a class="assu-name">Finance et Publique</a>
-            </div>
+                <p class="mt-5 font-bold text-center">Finance et Publique</p>
+            </a>
         </div>
     </div>
 </template>
@@ -106,25 +107,13 @@
 }
 
 .btn-02, .btn-03, .btn-04, .btn-05{
-    /*border-radius: 10px;
-    text-align: center;
-    margin-top: 1%;
-    font-size: 15px;
-    /*width: 60%;
-    height: 50%;*/
     font-size: 12px;
     margin-left: 10%;
     padding: 3% 2% 3% 5%;
     text-decoration: none;
-    /*background-color: white;*/
     color: rgb(3, 3, 3);
     cursor: pointer;
 }
-
-/*.btn-01:hover::after, .btn-02:hover::after, .btn-03:hover::after, .btn-04:hover::after{
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }*/
 .options {
     margin-top: 45%;
 }
@@ -235,17 +224,6 @@ button.licence3{
     box-shadow: 0px 0px 18px grey;
     background: linear-gradient(180deg, #e98a1e, 0.1%, white);
 }
-a.const-name{
-    color: 0000;
-    position: absolute;
-    font-size: 15px;
-    margin-top: 210px;
-    margin-left: 3.8%;
-    font-weight: bold;
-    text-decoration: none;
-    cursor: pointer;
-    top: 200px;
-}
 .famille {
     float: right;
     background-color: #fff;
@@ -257,17 +235,6 @@ a.const-name{
     border: 0px solid;
     box-shadow: 0px 0px 18px grey;
     background: linear-gradient(180deg, #e98a1e, 0.1%, white);
-}
-a.fam-name{
-    position: absolute;
-    font-size: 15px;
-    margin-top: 210px;
-    margin-left: 3.8%;
-    font-weight: bold;
-    text-decoration: none;
-    cursor: pointer;
-    left: 52.5%;
-    top: 200px;
 }
 .personne {
     float: right;
@@ -281,18 +248,6 @@ a.fam-name{
     box-shadow: 0px 0px 18px grey;
     background: linear-gradient(180deg, #e98a1e, 0.1%, white);
 }
-a.pers-name{
-    color: 0000;
-    position: absolute;
-    font-size: 15px;
-    margin-top: 210px;
-    margin-left: 3.8%;
-    font-weight: bold;
-    text-decoration: none;
-    cursor: pointer;
-    left: 78.9%;
-    top: 200px;
-}
 .finance {
     float: right;
     background-color: #fff;
@@ -304,16 +259,6 @@ a.pers-name{
     border: 0px solid;
     box-shadow: 0px 0px 18px grey;
     background: linear-gradient(180deg, #e98a1e, 0.1%, white);
-}
-a.fin-name{
-    color: 0000;
-    position: absolute;
-    font-size: 15px;
-    margin-top: 26px;
-    margin-left: 0.8%;
-    font-weight: bold;
-    text-decoration: none;
-    cursor: pointer;
 }
 .assurance {
     float: right;
@@ -327,16 +272,6 @@ a.fin-name{
     box-shadow: 0px 0px 18px grey;
     background: linear-gradient(180deg, #e98a1e, 0.1%, white);
 }
-a.assu-name{
-    color: 0000;
-    position: absolute;
-    font-size: 15px;
-    margin-top: 50px;
-    margin-left: 3.5%;
-    font-weight: bold;
-    text-decoration: none;
-    cursor: pointer;
-}
 .notariat {
     float: right;
     background-color: #fff;
@@ -349,50 +284,12 @@ a.assu-name{
     box-shadow: 0px 0px 18px grey;
     background: linear-gradient(180deg, #e98a1e, 0.1%, white);
 }
-a.not-name{
-    color: 0000;
-    position: absolute;
-    font-size: 15px;
-    margin-top: 50px;
-    margin-left: 5.1%;
-    font-weight: bold;
-    text-decoration: none;
-    cursor: pointer;
-}
-.law{
-    position: relative;
-    width: 60%;
-    height: 55%;
-    top: 15%;
-    left: 19%;
-}
-.family{
-    position: relative;
-    width: 75%;
-    height: 70%;
-    top: 10%;
-    left: 10.5%;
-}
-.people {
-    position: relative;
-    width: 85%;
-    height: 80%;
-    top: 3%;
-    left: 10.5%;
-}
-
-.money{
-    position: relative;
-    width: 75%;
-    height: 70%;
-    top: 5%;
-    left: 10.5%;
-}
-.lock{ 
-    position: relative;
-    width: 65%;
+.law, .family, .people, .money, .lock{
+    margin-left: 17%;
+    margin-top: 10%;
     height: 60%;
-    top: 6%;
-    left: 16.5%;;
+}
+a, button {
+    cursor: pointer;
 }
 </style>
