@@ -35,29 +35,29 @@
         </div>
 
         <div class="grid grid-flow-row-dense grid-cols-3 grid-rows-3 content">
-            <a class="constitutionel">
+            <a class="constitutionel" @click="$router.push('/Register1')">
                 <img src="../assets/entreprise.png" class="law" alt="law"/>
-                <p class="mt-5 font-bold text-center">Fiscalités des Entreprises</p>
+                <p class="mt-5 font-bold text-center">Fiscalités des Entreprises 🔒</p>
             </a>
-            <a class="famille">
+            <a class="famille" @click="$router.push('/Register1')">
                 <img src="../assets/surete.png" class="family" alt="family"/>
-                <p class="mt-5 font-bold text-center">Droit des Sûretés</p>
+                <p class="mt-5 font-bold text-center">Droit des Sûretés 🔒</p>
             </a>
-            <a class="personne">
+            <a class="personne" @click="$router.push('/Register1')">
                 <img src="../assets/fiscal.png" class="people" alt="people"/>
-                <p class="mt-5 font-bold text-center">Droit Fiscal Général</p>
+                <p class="mt-5 font-bold text-center">Droit Fiscal Général 🔒</p>
             </a>
-            <a class="finance">
+            <a class="finance" @click="$router.push('/Register1')">
                 <img src="../assets/public.png" class="money" alt="money"/>
-                <p class="mt-5 font-bold text-center">Droit des Propriétés Public</p>
+                <p class="mt-5 font-bold text-center">Droit des Propriétés Public 🔒</p>
             </a>
-            <a class="notariat">
+            <a class="notariat" @click="$router.push('/Register1')">
                 <img src="../assets/procedure.png" alt="lock" class="lock">
-                <p class="mt-5 font-bold text-center">Procédure Collective</p>
+                <p class="mt-5 font-bold text-center">Procédure Collective 🔒</p>
             </a>
-            <a class="assurance">
+            <a class="assurance" @click="$router.push('/Register1')">
                 <img src="../assets/contrat.png" alt="lock" class="lock">
-                <p class="mt-5 font-bold text-center">Contrats Spéciaux</p>
+                <p class="mt-5 font-bold text-center">Contrats Spéciaux 🔒</p>
             </a>
         </div>
 

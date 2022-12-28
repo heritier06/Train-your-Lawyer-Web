@@ -34,29 +34,29 @@
             <button class="licence3" @click="$router.push('/Licence3')">Licence 3</button>
         </div>
         <div class="grid grid-flow-row-dense grid-cols-3 grid-rows-3 content">
-            <a class="constitutionel">
+            <a class="constitutionel" @click="$router.push('/Register1')">
                 <img src="../assets/const.png" class="law" alt="law"/>
-                <p class="mt-5 font-bold text-center">Droit constitutionel</p>
+                <p class="mt-5 font-bold text-center">Droit constitutionel 🔒</p>
             </a>
-            <a class="famille">
+            <a class="famille" @click="$router.push('/Register1')">
                 <img src="../assets/intro.png" class="family" alt="family"/>
-                <p class="mt-5 font-bold text-center">Introduction au Droit</p>
+                <p class="mt-5 font-bold text-center">Introduction au Droit 🔒</p>
             </a>
-            <a class="personne">
+            <a class="personne" @click="$router.push('/Register1')">
                 <img src="../assets/civil.png" class="people" alt="people"/>
-                <p class="mt-5 font-bold text-center">Droit Civil</p>
+                <p class="mt-5 font-bold text-center">Droit Civil 🔒</p>
             </a>
-            <a class="finance">
+            <a class="finance" @click="$router.push('/Register1')">
                 <img src="../assets/histoire.png" class="money" alt="money"/>
-                <p class="mt-5 font-bold text-center">Histoire du Droit</p>
+                <p class="mt-5 font-bold text-center">Histoire du Droit 🔒</p>
             </a>
-            <a class="notariat">
+            <a class="notariat" @click="$router.push('/Register1')">
                 <img src="../assets/polconst.png" alt="lock" class="lock">
-                <p class="mt-5 font-bold text-center">Histoire Politique et Constitutionel</p>
+                <p class="mt-5 font-bold text-center">Histoire Politique et Constitutionel 🔒</p>
             </a>
-            <a class="assurance">
+            <a class="assurance" @click="$router.push('/Register1')">
                 <img src="../assets/socio.png" alt="lock" class="lock">
-                <p class="mt-5 font-bold text-center">Sociologie Politique</p>
+                <p class="mt-5 font-bold text-center">Sociologie Politique 🔒</p>
             </a>
         </div>
     </div>

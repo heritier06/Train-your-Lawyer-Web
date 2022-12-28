@@ -33,7 +33,7 @@
             <p class="text-xl mt-12 font-bold text-center welcome">Bienvenue dans l'onglet article.<br>
             Ici vous trouverez tous les articles qui pourront repondre à vos occupations</p>
             <img class="man-with-book" src="../assets/wait.png">
-            <input class="bar" type="text" placeholder="Rechercher un article" name="search-bar"/>
+            <input class="bar" type="text" placeholder="Rechercher un article 🔒" name="search-bar" @click="$router.push('/Register1')"/>
         </div>
     </div>
 </template>

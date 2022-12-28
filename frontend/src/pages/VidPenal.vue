@@ -38,12 +38,12 @@
                 <button class="first-lesson">Séance 1 - Introduction aux infractions </button>
                 <br><br>
                 <div class="flex flex-col option-cours">
-                    <button class="c-1" @click="$router.push('/Seance1')">Cours optimisés</button>
-                    <button class="c-2">Fiche de révision</button>
-                    <button class="c-3" @click="$router.push('/VidPenal')">Vidéo de cours</button>
-                    <button class="c-4">Mind map</button>
-                    <button class="c-5">Flash cards</button>
-                    <button class="c-6" @click="$router.push('/QcmPenal')">QCM</button>
+                    <button class="c-1" @click="$router.push('/Cours')">Cours optimisés</button>
+                    <button class="c-6" @click="$router.push('/VidPenal')">Vidéo de cours</button>
+                    <button class="c-3" @click="$router.push('/QcmPenal')">QCM</button>
+                    <button class="c-4" @click="$router.push('/Register1')">Mind map 🔒</button>
+                    <button class="c-5" @click="$router.push('/Register1')">Flash cards 🔒</button>
+                    <button class="c-2"  @click="$router.push('/Register1')">Fiche de révision 🔒</button>
                 </div>
             </div>
             <div class="lesson_">

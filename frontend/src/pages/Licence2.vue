@@ -35,29 +35,29 @@
         </div>
 
         <div class="grid grid-flow-row-dense grid-cols-3 grid-rows-3 content">
-            <a class="constitutionel">
-                <img src="../assets/family.png" class="law" alt="law"/>
-                <p class="mt-5 font-bold text-center">Droit de la famille 2</p>
-            </a>
-            <a class="famille" @click="$router.push('/Seance1')">
+            <a class="famille" @click="$router.push('/Penal')">
                 <img src="../assets/penal.png" class="family" alt="family"/>
                 <p class="mt-5 font-bold text-center">Droit Pénal Général</p>
             </a>
-            <a class="personne">
+            <a class="constitutionel" @click="$router.push('/Register1')">
+                <img src="../assets/family.png" class="law" alt="law"/>
+                <p class="mt-5 font-bold text-center">Droit de la famille 2 🔒</p>
+            </a>
+            <a class="personne" @click="$router.push('/Register1')">
                 <img src="../assets/admin.png" class="people" alt="people"/>
-                <p class="mt-5 font-bold text-center">Droit Administratif</p>
+                <p class="mt-5 font-bold text-center">Droit Administratif 🔒</p>
             </a>
-            <a class="finance">
+            <a class="finance" @click="$router.push('/Register1')">
                 <img src="../assets/liberty.png" class="money" alt="money"/>
-                <p class="mt-5 font-bold text-center">Droit des Libertés Fondamental</p>
+                <p class="mt-5 font-bold text-center">Droit des Libertés Fondamentales 🔒</p>
             </a>
-            <a class="notariat">
+            <a class="notariat" @click="$router.push('/Register1')">
                 <img src="../assets/english.png" alt="lock" class="lock">
-                <p class="mt-5 font-bold text-center">Anglais Général</p>
+                <p class="mt-5 font-bold text-center">Anglais Général 🔒</p>
             </a>
-            <a class="assurance">
+            <a class="assurance" @click="$router.push('/Register1')">
                 <img src="../assets/money.png" alt="lock" class="lock">
-                <p class="mt-5 font-bold text-center">Finance et Publique</p>
+                <p class="mt-5 font-bold text-center">Finance et Publique 🔒</p>
             </a>
         </div>
     </div>

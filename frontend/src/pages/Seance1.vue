@@ -35,11 +35,11 @@
                 <p class="mt-12 text-2xl font-bold text-center">Droit Pénal Général</p>
                 <p class="mt-3 text-center text-gray-600 text-sm">0% terminée</p>
                 <hr class="mt-5">
-                <button class="first-lesson">Séance 1 - Les infractions </button>
+                <button class="first-lesson" @click="$router.push('/Penal')">Séance 1 - Les infractions </button>
                 <br>
-                <button class="second-lesson">Séance 2 - L'element legal </button>
+                <button class="second-lesson"  @click="$router.push('/Register1')">Séance 2 - L'element legal 🔒</button>
                 <br>
-                <button class="third-lesson">Séance 3 - L'element materiel </button>
+                <button class="third-lesson"  @click="$router.push('/Register1')">Séance 3 - L'element materiel 🔒</button>
                 <br>
                 <hr class="mt-5">
                 <div class="participants">
@@ -54,11 +54,11 @@
                 <p class="ml-6 mt-3 text-gray-600 text-sm">0% terminée</p>
                 <div class="flex flex-col option-cours">
                     <button class="c-1" @click="$router.push('/Cours')">Cours optimisés</button>
-                    <button class="c-2">Fiche de révision</button>
-                    <button class="c-3" @click="$router.push('/VidPenal')">Vidéo de cours</button>
-                    <button class="c-4">Mind map</button>
-                    <button class="c-5">Flash cards</button>
-                    <button class="c-6" @click="$router.push('/QcmPenal')">QCM</button>
+                    <button class="c-6" @click="$router.push('/VidPenal')">Vidéo de cours</button>
+                    <button class="c-3" @click="$router.push('/QcmPenal')">QCM</button>
+                    <button class="c-4" @click="$router.push('/Register1')">Mind map 🔒</button>
+                    <button class="c-5" @click="$router.push('/Register1')">Flash cards 🔒</button>
+                    <button class="c-2"  @click="$router.push('/Register1')">Fiche de révision 🔒</button>
                 </div>
             </div>
         </div>

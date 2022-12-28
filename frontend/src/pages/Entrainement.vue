@@ -32,28 +32,28 @@
             <p class="text-xl mt-12 font-bold text-center">Sessions d'entraînements</p>
         </div>
         <div class="grid grid-flow-row-dense grid-cols-1 grid-rows-3 content">
-            <div class="first-training">
+            <div class="first-training"  @click="$router.push('/Penalent')">
                 <div class="brd-1">
-                    <img class ="trn-01" src="../assets/penal.png" @click="$router.push('/Penalent')">
+                    <img class ="trn-01" src="../assets/penal.png">
                 </div>
-                <p class="ml-12 text-xl mt-12 font-bold text-center" @click="$router.push('/Penalent')">
+                <p class="ml-12 text-xl mt-12 font-bold text-center">
                     Droit Penal General - Session d’entraînement
                 </p>
             </div>
-            <div class="second-training">
+            <div class="second-training" @click="$router.push('/Register1')">
                 <div class="brd-2">
                     <img class ="trn-02" src="../assets/family.png">
                 </div>
                 <p class="ml-12 text-xl mt-12 font-bold text-center">
-                    Droit de la famille 1 - Session d’entraînement
+                    Droit de la famille 1 - Session d’entraînement 🔒
                 </p>
             </div>
-            <div class="third-training">
+            <div class="third-training" @click="$router.push('/Register1')">
                 <div class="brd-3">
                     <img class ="trn-03" src="../assets/admin.png">
                 </div>
                 <p class="ml-12 text-xl mt-12 font-bold text-center">
-                    Droit administratif 2 - Session d’entraînement
+                    Droit administratif 2 - Session d’entraînement 🔒
                 </p>
             </div>
         </div>
