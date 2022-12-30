@@ -1,3 +1,8 @@
+<script>
+  import AOS from "aos";
+  AOS.init();
+</script>
+
 <template>
   <div class="Landing">
         <div class="nav-bar">
@@ -28,11 +33,90 @@
           <img src="../assets/learn.png" class="learn">
         </div>
         <button class="mt-2 btn-continue" @click="$router.push('/Lesson')">Je teste</button>
-        <img class="cours-ill scale-50" src="../assets/cours-ill.png">
+        <div class="flex flex-col content">
+          <div class="first">
+            <p class="font-bold md:text-center cours-text" data-aos="flip-up">
+              Train Your Lawyer contient une multitude<br>de cours certifiés, des fiches de révision, de flash cards, <br> de mind map ainsi des QCM de la licence 1 en licence 3<br>vous permettant d’approfondir vos acquis et connaissances.
+            </p>
+            <div class="brd-1">
+              <img src="../assets/cours-ill.png" data-aos="fade-up-right">
+            </div>
+          </div>
+          <div class="second">
+            <div class="brd-2">
+              <img src="../assets/train.png" data-aos="fade-up-left">
+            </div>
+            <p class="font-bold md:text-center train-text" data-aos="flip-up">
+              Elle dispose également d'exercices corrigés<br> et des cas pratiques <br>vous permettant de consolider vos connaissances.
+            </p>
+          </div>
+          <div class="fifth">
+            <p class="font-bold md:text-center article-text"  data-aos="zoom-in">
+              Aussi des travaux dirigés menés<br>par des professeurs certifiés et des étudiants ayant déjà finis <br>et désirant d'aider leurs camarades en cours d'études. 
+            </p>
+            <div class="brd-3">
+              <img src="../assets/article-ill.png" data-aos="fade-down-right">
+            </div>
+          </div>
+          <div class="four">
+            <div class="brd-4">
+              <img src="../assets/td-fill.png" data-aos="fade-down-right">
+            </div>
+            <p class="font-bold md:text-center td-text"  data-aos="zoom-out">
+              Aussi des travaux dirigés menés<br>par des professeurs certifiés et des étudiants ayant déjà finis <br>et désirant d'aider leurs camarades en cours d'études. 
+            </p>
+          </div>
+          <div class="third">
+            <p class="font-bold md:text-center pack-text" data-aos="zoom-out-down">
+              Nous disposons de deux packs l'un premium qui vous propose <br> un accès restreintx et l'autre pro qui vous donne <br> un accès illimité aux contenus de la plateforme.
+            </p>
+            <div class="brd-5">
+              <img src="../assets/pack-ill.png" data-aos="fade-down-right">
+            </div>
+          </div>
+        </div>
+        <footer class="footer">
+          <div class="waves">
+              <div class="wave" id="wave1"></div>
+              <div class="wave" id="wave2"></div>
+              <div class="wave" id="wave3"></div>
+              <div class="wave" id="wave4"></div>
+            </div>
+          <div class="about-col">
+              <h3 class="underline underline-offset-8 font-bold">À PROPOS DE NOUS</h3>
+              <p class="text-left ">
+                  Train your lawyer est une plateforme de soutien scolaire constitutée de fiches de cours, flash cards, mind map et surtout 
+                  d'un simulateur de procès qui pourront permettre aux étudiants en droit de mieux comprendre leurs cours et de faire des 
+                  exercices, travaux dirigés et des exercices qui les mettent en situation de vie active
+              </p>
+              </div>
+          <ul class="social-icon">
+              <li class="social-icon__item"><a class="social-icon__link" href="#">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a></li>
+              <li class="social-icon__item"><a class="social-icon__link" href="#">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a></li>
+              <li class="social-icon__item"><a class="social-icon__link" href="#">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a></li>
+              <li class="social-icon__item"><a class="social-icon__link" href="#">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a></li>
+            </ul>
+            <ul class="menu">
+              <li class="menu__item"><a class="menu__link" href="#">Accueil</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Equipe</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Contactez nous</a></li>
+            </ul>
+            <p class="text-center">&copy;2022 Train Your Lawyer | Tous les droits sont réservé</p>
+        </footer> 
+        <!-- <img class= "scale-50" src="../assets/cours-ill.png" data-aos="fade-up">
         <p class="font-bold md:text-center cours-text">
           Train Your Lawyer contient une multitude<br>de cours certifiés, des fiches de révision, de flash cards, <br> de mind map ainsi des QCM de la licence 1 en licence 3<br>vous permettant d’approfondir vos acquis et connaissances.
-        </p>
-        <img class="train-ill scale-50" src="../assets/train.png">
+        </p> -->
+        <!-- <img class="train-ill scale-50" src="../assets/train.png">
         <p class="font-bold md:text-center train-text">
           Elle dispose également d'exercices corrigés<br> et des cas pratiques <br>vous permettant de consolider vos connaissances.
         </p>
@@ -46,9 +130,9 @@
         </p>
         <img class="pack-ill scale-50" src="../assets/pack-ill.png">
         <p class="font-bold md:text-center pack-text">
-          Nous disposons de deux packs l'un premium qui vous propose <br> un accès restreint et l'autre pro qui vous donne <br> un accès illimité aux contenus de la plateforme.
-        </p>
-        <footer class="footer">
+          Nous disposons de deux packs l'un premium qui vous propose <br> un accès restreintx et l'autre pro qui vous donne <br> un accès illimité aux contenus de la plateforme.
+        </p> -->
+        <!-- <footer class="footer">
           <div class="waves">
               <div class="wave" id="wave1"></div>
               <div class="wave" id="wave2"></div>
@@ -84,72 +168,44 @@
               <li class="menu__item"><a class="menu__link" href="#">Contactez nous</a></li>
              </ul>
             <p class="text-center">&copy;2022 Train Your Lawyer | Tous les droits sont réservé</p>
-      </footer>
+      </footer> -->
 </div>
-</template>
 
+</template>
 <style scoped>
 
-@keyframes gelatine {
-  from, to { transform: scale(0.5, 0.5); }
-  25% { transform: scale(0.5, 0.6); }
-  50% { transform: scale(0.5, 0.5); }
-  75% { transform: scale(0.5, 0.6); }
-}
-.cours-ill {
+.cours-text, .td-text, .pack-text, .train-text, .article-text{
   position: relative;
-  top: 300px;
-  left: -20%;
-  animation: gelatine 3.5s infinite;
+  top: 250px;
 }
-.train-ill{
-  position: relative;
-  top: -300px;
-  right: -20%;
-  animation: gelatine 3.5s infinite;
+.train-text, .td-text{
+  left: 200px;
 }
-.article-ill{
-  position: relative;
-  top: -900px;
-  left: -20%;
-  animation: gelatine 3.5s infinite;
+.cours-text, .pack-text, .article-text{
+  left: -100px;
 }
-.td-ill{
-  position: relative;
-  top: -1600px;
-  right: -20%;
-  animation: gelatine 3.5s infinite;
+.content{
+  margin-top: 55%;
+  width: 100%;
 }
-.pack-ill{
-  position: relative;
-  top: -2100px;
-  left: -20%;
-  animation: gelatine 3.5s infinite;
+.brd-1, .brd-2, .brd-3, .brd-4, .brd-5{
+  height: 50%;
+  width: 60%;
 }
-.train-text{
-  position: relative;
-  top: -1050px;
-  left: -30%;
+.first, .second, .third, .four, .fifth{
+  display: inline-flex;
+  width: 70%;
+  height: 50%;
+  border-radius: 10px;
+  margin-bottom: 10%;
 }
-.cours-text{
+.first, .third, .fifth{
   position: relative;
-  top: -450px;
-  right: -30%;
+  left: 28%;
 }
-.article-text{
+.second, .four{
   position: relative;
-  top: -1650px;
-  right: -30%;
-}
-.td-text{
-  position: relative;
-  top: -2350px;
-  left: -30%;
-}
-.pack-text{
-  position: relative;
-  top: -2850px;
-  right: -30%;
+  left: 5%;
 }
 .wave {
 position: absolute;
@@ -254,7 +310,7 @@ font-weight: 300;
 font-weight: bold;
 }
 .footer {
-  margin-top: -150%;
+  margin-bottom: 0%;
   position: relative;
   box-shadow: #000;
   background-color: #eea55b;
