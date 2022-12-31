@@ -52,7 +52,7 @@
                     <p class="mt-12 text-xl  text-center">&#x1F468;&#x1F3FE;&#x200D;&#x2696;&#xFE0F; Droit Pénale - Séance 1 - Introduction au droit Pénal</p>
                     <hr class="mt-5">
                     <p class="mt-12 ml-5 text-2xl">&#x1F4DA; Introduction au droit Penal</p>
-                  </div>
+                  
                   <div class="qcm-q1">
                     <h1>QCM</h1>
                     <form>
@@ -70,6 +70,7 @@
                     </form>
                     <!-- Affiche le résultat du QCM une fois soumis -->
                     <p v-if="submitted">Vous avez obtenu {{ numCorrect }} sur {{ questions.length }} réponses correctes.</p>
+                  </div>
                   </div>
             </div>
         </div>
@@ -140,19 +141,11 @@ export default {
     margin-top: 5%;
 }
 .submit{
-    position: absolute;
     background-color: #FFC580;
     border: 1px solid;
     border-radius: 10px 10px;
     width: 150px;
-    top: 105%;
-}
-.qcm-q1{
-    position:absolute;
-    top:40%;
-    left: 55%;
-    font-size: larger;
-    width: 500px;
+    margin-top: 5%;
 }
 .c-1, .c-3, .c-5{
     background-color: white;

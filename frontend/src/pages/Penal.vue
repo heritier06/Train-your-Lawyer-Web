@@ -31,7 +31,7 @@
         <div class="grid grid-flow-row-dense grid-cols-1 grid-rows-1 formation">
             <div class="head">
                 <p class="mt-8 text-xl font-bold name">Droit Pénal</p>
-                <img class="penal" src="../assets/admin.png"/>
+                <img class="penal" src="../assets/penal.png"/>
             </div>
         </div>
         <div class="grid grid-flow-row-dense grid-cols-1 grid-rows-1 content">
