@@ -9,11 +9,16 @@
                     <img src=../assets/verified.png className="verified" alt="verified"/>
                     <img src=../assets/arrow.png className="arrow" alt="arrow"/>
                     <a class="button" @click="$router.push('/Pack')">Suivant</a>
+
             </div>
     </div>
     );
 }
 </template>
+
+<script>
+
+</script>
 
 <style scoped>
 

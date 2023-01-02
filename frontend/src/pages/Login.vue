@@ -10,13 +10,14 @@
                 <img src="../assets/logo.png" class="logo" alt="logo" />
                 <a class="connect-lo" @click="$router.push('/Login')">Se connecter</a>
                 <a class="account-lo" @click="$router.push('/Register1')">Créer un compte</a>
+                
                 <input type="email" v-model="email" name="e-mail" id="mail" placeholder="E-mail" required autofocus/>
                 <input type="password" v-model="password" name="password" id="pass" placeholder="Mot de passe" required autofocus />
                 <div class="me">
                     <input type="checkbox" name="rememberme" id="rememberme" value="1" />
                     <label for="rememberme">Se souvenir de moi</label>
                 </div>
-                <a class="forgot" href="#">Mot de passe oublié?</a>
+                <a class="forgot" href="#" @click="state.sns='not'">Mot de passe oublié?</a>
                 <button class="button-s" type="submit">Connexion</button>
             </form>
         </div>
@@ -24,6 +25,16 @@
 </template>
 
 <script>
+
+function isEmpty(obj) {
+    for(var prop in obj) {
+        if(obj.hasOwnProperty(prop))
+            return false;
+    }
+
+    return JSON.stringify(obj) === JSON.stringify({});
+}
+import store from '../store';
 import axios from "axios";
 export default {
   data() {
@@ -34,7 +45,9 @@ export default {
       author: "",
       date_posted: ""*/
       email: "",
-      password: ""
+      password: "",
+      nom: 'okkk',
+      stat: this.state.sns
     };
   },
   methods: {
@@ -50,9 +63,25 @@ export default {
       };
       this.__submitToServer(postData);
     },
+    updatestatus() {
+      this.state.sns = "not"
+    },
     async __submitToServer(data) {
       let res = await axios.post("http://localhost:3000/users/login", data);
-      console.log(JSON.stringify(res.data));
+      let ress = JSON.stringify(res.data);
+      console.log(ress);
+      if (Object.keys(ress).length === 2) {
+        console.log("Connexion failed!");
+        this.email = "";
+        this.password = "";
+        alert("Wrong email or password");
+        localStorage.setItem('isLog', 'offline')
+      }
+      else {
+        console.log("Connexion success!");
+        localStorage.setItem('isLog', 'online')
+        this.$router.push('/');
+      }
     }
   }
 };
