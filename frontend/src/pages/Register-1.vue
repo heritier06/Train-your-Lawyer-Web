@@ -306,7 +306,7 @@ background-color: white;
 border-radius: 5%;
 }
 select{
-width: 85%; 
+width: 80%; 
 height: 36px; 
 border-radius: 15px 15px; 
 background-color: #fff; 

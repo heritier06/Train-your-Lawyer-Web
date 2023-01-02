@@ -3,12 +3,15 @@ import { createRouter, createWebHistory } from 'vue-router';
 import '@/assets/styles/fonts.css';
 import '@/assets/styles/main.css';
 import '@/assets/styles/tailwind.css';
+import 'aos/dist/aos.css';
 import App from '@/app.vue';
 import { routes } from '@/routes.js';
-import store from './store'
-// import BootstrapVue from 'bootstrap-vue/dist/bootstrap-vue.esm';
-// import 'bootstrap-vue/dist/bootstrap-vue.css';
-// import 'bootstrap/dist/css/bootstrap.css';
+
+import {
+  openKkiapayWidget,
+  addKkiapayListener,
+  removeKkiapayListener,
+} from "kkiapay";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.VITE_BASE_PUBLIC_PATH),
@@ -22,4 +25,3 @@ app.config.globalProperties.state = {
 }
 app.use(router);
 app.mount('#app');
-//Vue.use(BootstrapVue);

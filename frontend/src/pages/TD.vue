@@ -37,7 +37,7 @@
                     Dans cette partie de la plateforme, tu peux poser toutes tes questions à nos tuteurs en ligne qui se chargeront de répondre aux plus vite. 
                 </p>
                 <br>
-                <button class="more">En savoir en plus</button>
+                <button class="more" @click="$router.push('/Register1')">En savoir en plus 🔒</button>
             </div>
         </div>
     </div>

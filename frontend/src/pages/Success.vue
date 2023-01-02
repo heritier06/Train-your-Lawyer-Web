@@ -8,7 +8,8 @@
                     <h3 class="Sucess">Votre compte a été créé avec succès !</h3>
                     <img src=../assets/verified.png className="verified" alt="verified"/>
                     <img src=../assets/arrow.png className="arrow" alt="arrow"/>
-                    <a class="button" href="#" @click="$router.push('/')">Suivant</a>
+                    <a class="button" @click="$router.push('/Pack')">Suivant</a>
+
             </div>
     </div>
     );

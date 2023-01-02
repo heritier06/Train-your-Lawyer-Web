@@ -38,12 +38,12 @@
                 <button class="first-lesson">Séance 1 - Introduction aux infractions </button>
                 <br><br>
                 <div class="flex flex-col option-cours">
-                    <button class="c-1" @click="$router.push('/Seance1')">Cours optimisés</button>
-                    <button class="c-2">Fiche de révision</button>
-                    <button class="c-3" @click="$router.push('/VidPenal')">Vidéo de cours</button>
-                    <button class="c-4">Mind map</button>
-                    <button class="c-5">Flash cards</button>
-                    <button class="c-6" @click="$router.push('/QcmPenal')">QCM</button>
+                  <button class="c-1" @click="$router.push('/Cours')">Cours optimisés</button>
+                    <button class="c-6" @click="$router.push('/VidPenal')">Vidéo de cours</button>
+                    <button class="c-3" @click="$router.push('/QcmPenal')">QCM</button>
+                    <button class="c-4" @click="$router.push('/Register1')">Mind map 🔒</button>
+                    <button class="c-5" @click="$router.push('/Register1')">Flash cards 🔒</button>
+                    <button class="c-2"  @click="$router.push('/Register1')">Fiche de révision 🔒</button>
                 </div>
             </div>
             <div class="lesson_">
@@ -52,7 +52,7 @@
                     <p class="mt-12 text-xl  text-center">&#x1F468;&#x1F3FE;&#x200D;&#x2696;&#xFE0F; Droit Pénale - Séance 1 - Introduction au droit Pénal</p>
                     <hr class="mt-5">
                     <p class="mt-12 ml-5 text-2xl">&#x1F4DA; Introduction au droit Penal</p>
-                  </div>
+                  
                   <div class="qcm-q1">
                     <h1>QCM</h1>
                     <form>
@@ -71,6 +71,7 @@
                     <!-- Affiche le résultat du QCM une fois soumis -->
                     <p v-if="submitted">Vous avez obtenu {{ numCorrect }} sur {{ questions.length }} réponses correctes.</p>
                   </div>
+                  </div>
             </div>
         </div>
     </div>
@@ -83,14 +84,24 @@ export default {
       // Définissez les données du QCM ici
       questions: [
         {
-          text: 'Comment peut ont définir le droit pénal ?',
-          answers: ['obi', 'obibi', 'goat', 'yeah'],
-          correctAnswer: 'obibi',
+          text: 'Le principe de légalité criminelle:',
+          answers: ['A/est protégé par le bloc de conventionnalité', 'B/est protégé par le bloc de légalité', 'C/est protégé par le bloc de constitutionnalité', 'D/Aucune des réponses ne convient'],
+          correctAnswer: 'B/un délit',
         },
         {
-          text: 'A quoi sert le droit pénal?',
-          answers: ['Blanc', 'Noir', 'Gris', 'Rouge'],
-          correctAnswer: 'Blanc',
+          text: 'Article 111-4 du Code pénal: "La loi pénale est d\'interprétation ____"',
+          answers: ['A/téléogique', 'B/extensive', 'C/usuelle', 'D/Aucune des réponses ne convient'],
+          correctAnswer: 'D/Aucune des réponses ne convient',
+        },
+        {
+          text: 'Pour les délits, le délai de prescription de l\'action publique est de :',
+          answers: ['A/1 an', 'B/5ans', 'C/20 ans', 'D/Aucune des réponses ne convient'],
+          correctAnswer: 'D/Aucune des réponses ne convient',
+        },
+        {
+          text: 'En Matière criminelle, la tentative',
+          answers: ['A/Est toujours punissable', 'B/Est punissable seulement quand un texte le prévoit', 'C/N\'est jamais punissable', 'D/Aucune des réponses ne convient'],
+          correctAnswer:'A/Est toujours punissable',
         },
         // Ajoutez autant de questions que vous le souhaitez...
       ],
@@ -109,7 +120,7 @@ export default {
       this.submitted = true
       // Vérifie les réponses une fois le QCM soumis
       this.questions.forEach((question, index) => {
-        if (question.correctAnswer === this.selectedAnswers[index]) {
+        if (question.correctAnswer = this.selectedAnswers[index]) {
           this.numCorrect++
         }
       })
@@ -127,21 +138,14 @@ export default {
 
 .questions{
     font-weight: bolder;
+    margin-top: 5%;
 }
 .submit{
-    position: absolute;
     background-color: #FFC580;
     border: 1px solid;
     border-radius: 10px 10px;
     width: 150px;
-    top: 105%;
-}
-.qcm-q1{
-    position:absolute;
-    top:40%;
-    left: 55%;
-    font-size: larger;
-    width: 500px;
+    margin-top: 5%;
 }
 .c-1, .c-3, .c-5{
     background-color: white;

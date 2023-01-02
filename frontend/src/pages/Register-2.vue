@@ -76,7 +76,7 @@
   border-radius: 5%;
 }
 select{
-  width: 80%; 
+  width: 50%; 
   height: 36px; 
   border-radius: 15px 15px; 
   background-color: #fff; 

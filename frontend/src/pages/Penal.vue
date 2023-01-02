@@ -31,25 +31,25 @@
         <div class="grid grid-flow-row-dense grid-cols-1 grid-rows-1 formation">
             <div class="head">
                 <p class="mt-8 text-xl font-bold name">Droit Pénal</p>
-                <img class="penal" src="../assets/law.png"/>
+                <img class="penal" src="../assets/penal.png"/>
             </div>
         </div>
         <div class="grid grid-flow-row-dense grid-cols-1 grid-rows-1 content">
             <div class="bloc-cours">
                 <a class="titre">Contenu du cours</a>
-                <div class="contenu1">
+                <div class="contenu1"  @click="$router.push('/Seance1')">
                     <img class="arrow" src="../assets/arrow_down.png"/>
-                    <a class="seance1">Séance 1 - Titre</a>
+                    <a class="seance1">Séance 1 - Les infractions</a>
                 </div>
-                <div class="contenu2">
+                <div class="contenu2"  @click="$router.push('/Register1')">
                     <img class="arrow" src="../assets/arrow_down.png"/>
                     <a class="seance2">Séance 2 - Titre</a>
                 </div>
-                <div class="contenu3">
+                <div class="contenu3"  @click="$router.push('/Register1')">
                     <img class="arrow" src="../assets/arrow_down.png"/>
                     <a class="seance3">Séance 3 - Titre</a>
                 </div>
-                <div class="contenu4">
+                <div class="contenu4"  @click="$router.push('/Register1')">
                     <img class="arrow" src="../assets/arrow_down.png"/>
                     <a class="seance4">Séance 4 - Titre</a>
                 </div>
