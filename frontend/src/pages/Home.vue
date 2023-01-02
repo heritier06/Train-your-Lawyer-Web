@@ -8,8 +8,9 @@
             <a class="cours" @click="$router.push('/Lesson')">Cours</a>
             <a class="article" href="#">Article</a>
             <a class="packs" href="#">Nos Packs</a>
-            <button class="btn-try">Essayer</button>
-            <button class="btn-connect" @click="$router.push('/Login')">Connexion</button>
+            <button class="btn-try" v-if="status != 'online'">Essayer</button>
+            <button class="btn-connect" @click="$router.push('/Login')" v-if="status != 'online'">Connexion</button>
+            <img src="../assets/profil.png" class="profil" v-if="status === 'online'">
             <div class="vertically-2"></div>
         </div>
         <div class="blob">
@@ -77,6 +78,18 @@
         </footer>
 </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      status: localStorage.getItem('isLog')
+    };
+    },
+    methods: {
+    }
+  }
+</script>
 
 <style scoped>
 
@@ -391,6 +404,17 @@
     position: absolute;
     top: 10px;
     left: 30px;
+}
+.profil {
+  height: 65px;
+  position: absolute;
+  top: 1px;
+  left: 1200px;
+
+  padding: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
+  border-radius: 15px;
 }
 a.name{
     position: absolute;
