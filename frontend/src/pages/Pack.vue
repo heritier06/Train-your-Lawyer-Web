@@ -37,13 +37,49 @@
             <img src="../assets/pro.jpeg" class="pro">
         </div>
         <div class="content-pre">
-            <button class="pre-ab" >Abonnement premium</button>
+            <button @click="ab_pre" class="pre-ab" >Abonnement premium</button>
         </div>
         <div class="content-pro">
-            <button class="pro-ab" >Abonnement Pro</button>
+            <button @click="ab_pro" class="pro-ab" >Abonnement Pro</button>
         </div>
     </div>
 </template>
+
+<script>
+  export default {
+    methods: {
+      ab_pre() {
+        openKkiapayWidget({
+          amount: 2500,
+          api_key: "90f220e0876411edafdd9bfe995c3ca5",
+          sandbox: true,
+          phone: "97000000",
+        });
+        this.mounted();
+      },
+      ab_pro() {
+        openKkiapayWidget({
+          amount: 4000,
+          api_key: "90f220e0876411edafdd9bfe995c3ca5",
+          sandbox: true,
+          phone: "97000000",
+        });
+        this.mounted();
+    },
+      successHandler(response) {
+        console.log(response);
+        if (response)
+            this.$router.push("Lesson");
+      },
+      mounted() {
+            addKkiapayListener('success',this.successHandler);
+      },
+      beforeDestroy() {
+        removeKkiapayListener('success',this.successHandler)
+      },
+    },
+  };
+</script>
 
 <style scoped>
 

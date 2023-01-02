@@ -6,7 +6,11 @@ import '@/assets/styles/tailwind.css';
 import 'aos/dist/aos.css';
 import App from '@/app.vue';
 import { routes } from '@/routes.js';
-
+import {
+  openKkiapayWidget,
+  addKkiapayListener,
+  removeKkiapayListener,
+} from "kkiapay";
 const router = createRouter({
   history: createWebHistory(import.meta.env.VITE_BASE_PUBLIC_PATH),
   routes,
