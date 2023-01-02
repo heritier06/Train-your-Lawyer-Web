@@ -1,7 +1,7 @@
-<script>
+<!-- <script>
   import AOS from "aos";
   AOS.init();
-</script>
+</script> -->
 
 <template>
   <div class="Landing">
@@ -175,6 +175,8 @@
 </template>
 
 <script>
+import AOS from "aos";
+  AOS.init();
 export default {
   data() {
     return {
@@ -536,7 +538,7 @@ animation: type-2 4.2s steps(40,end) 4s forwards;
   font-size: 30px;
   width: 70%;
 }
-.acceuil{
+.accueil{
   position: absolute;
   top: 20px;
   left: 280px;

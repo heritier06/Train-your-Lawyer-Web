@@ -19,7 +19,6 @@ const router = createRouter({
 });
 
 const app = createApp(App);
-store.actions.initializeCount();
 app.config.globalProperties.state = {
   sns: 'ok'
 }
