@@ -39,8 +39,8 @@
                 <br><br>
                 <div class="flex flex-col option-cours">
                     <button class="c-2" @click="$router.push('/Penalent')">Dissertation juridique</button>
-                    <button class="c-3">Analyse d'arrêt</button>
-                    <button class="c-4">Cas pratiques</button>
+                    <button class="c-3" @click="$router.push('/Penalent2')">Analyse d'arrêt</button>
+                    <button class="c-4" @click="$router.push('/Penalent3')">Cas pratiques</button>
                 </div>
             </div>
             <div class="lesson_">
@@ -280,7 +280,7 @@ button.licence1{
 }
 .up-bar {
     float: right;
-    background-color: #ffff;
+    background: linear-gradient(-90deg, #e98a1e, 0.1%, white);
     width: 79.93%;
     height: 13%;
     float: right;
@@ -311,5 +311,8 @@ a.title{
     top: 50px;
     left: 380px;
     font-weight: bold;
+}
+a, button {
+  cursor: pointer;
 }
 </style>

@@ -160,7 +160,7 @@
 }
 .up-bar {
     float: right;
-    background-color: #ffff;
+    background: linear-gradient(-90deg, #e98a1e, 0.1%, white);
     width: 79.93%;
     height: 13%;
     float: right;
@@ -191,5 +191,8 @@ a.title{
     top: 50px;
     left: 380px;
     font-weight: bold;
+}
+a, button {
+  cursor: pointer;
 }
 </style>

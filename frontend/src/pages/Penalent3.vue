@@ -68,6 +68,7 @@
                         <br>
                         <br>
                     </div>
+                    <button class="text-center rep" @click="$router.push('/Casrep')">Voir réponses</button>
                 </div>
             </div>
             </div>
@@ -75,6 +76,21 @@
 </template>
 
 <style scoped>
+button.rep{
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 30%;
+    font-size: 15px;
+    display: inline-block;
+    width: 40%;
+    height: 8%;
+    padding: 3% 3% 5% 3%;
+    text-decoration: none;
+    background-color: #e98a1e;
+    color: #fff;
+    cursor: pointer;
+}
 
 .box{
     position: relative;
@@ -215,7 +231,7 @@ button.licence1{
 }
 .up-bar {
     float: right;
-    background-color: #ffff;
+    background: linear-gradient(-90deg, #e98a1e, 0.1%, white);
     width: 79.93%;
     height: 13%;
     float: right;
@@ -246,5 +262,8 @@ a.title{
     top: 50px;
     left: 380px;
     font-weight: bold;
+}
+a, button {
+  cursor: pointer;
 }
 </style>

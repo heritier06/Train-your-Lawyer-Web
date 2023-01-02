@@ -40,10 +40,10 @@
                 <div class="flex flex-col option-cours">
                     <button class="c-1" @click="$router.push('/Seance1')">Cours optimisés</button>
                     <button class="c-2">Fiche de révision</button>
-                    <button class="c-3">Vidéo de cours</button>
+                    <button class="c-3" @click="$router.push('/VidPenal')">Vidéo de cours</button>
                     <button class="c-4">Mind map</button>
                     <button class="c-5">Flash cards</button>
-                    <button class="c-6">QCM</button>
+                    <button class="c-6" @click="$router.push('/QcmPenal')">QCM</button>
                 </div>
             </div>
             <div class="lesson_">
@@ -195,7 +195,7 @@ button.licence1{
 }
 .up-bar {
     float: right;
-    background-color: #ffff;
+    background: linear-gradient(-90deg, #e98a1e, 0.1%, white);
     width: 79.93%;
     height: 13%;
     float: right;
@@ -226,5 +226,8 @@ a.title{
     top: 50px;
     left: 380px;
     font-weight: bold;
+}
+a, button {
+  cursor: pointer;
 }
 </style>
