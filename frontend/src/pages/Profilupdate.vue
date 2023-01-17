@@ -16,12 +16,14 @@
         <div class="box">
             <img src="">
             <input type="file" name="" id="file" accept="image/*">
+            <label for="file">Modifier</label>
             <input type="text" name="" placeholder="Nom">
             <input type="text" name="" placeholder="Prénom">
             <input type="text" name="" placeholder="Année">
             <input type="text" name="" placeholder="Email">
             <input type="text" name="" placeholder="Tél">
-            <button style="float: center">Déconnexion</button>
+            <button style="float: left">Valider</button>
+            <button style="float: right">Annuler</button>
         </div>
     </div>
 </template>
@@ -148,7 +150,7 @@ a.name{
     float: center;
     background-color: #fff;
     width: 360px;
-    height: 510px;
+    height: 600px;
     margin-top: 30px;
     margin-left: 20%;
 }
@@ -197,7 +199,7 @@ button {
     height: 30px;
     width: 100px;
     border-radius: 5px;
-    margin-left: 120px;
+    margin: 0px;
     transition: all 0.3s;
 }
 
