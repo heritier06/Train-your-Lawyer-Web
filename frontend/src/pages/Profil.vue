@@ -1,239 +1,120 @@
 <template>
-    <div class="Profil">
-        <div class="nav-bar">
-            <img src="../Assets/logo.png" class="logo">
-            <a class="name" href="#">Train your Lawyer</a>
-            <div class="vertically"></div>
-            <!-- <a class="acceuil" @click="$router.push('/')">Acceuil</a> -->
-            <a class="cours" @click="$router.push('/Lesson')">Cours</a>
-            <a class="acceuil" @click="$router.push('/Profil')">Profil</a>
-            <a class="article" href="#">Article</a>
-            <a class="packs" href="#">Nos Packs</a>
-            <button class="btn-try">Essayer</button>
-            <button class="btn-connect" @click="$router.push('/Login')">Connexion</button>
-            <div class="vertically-2"></div>
-        </div>
-        <div class="box">
-            <img src="">
-            <input type="file" name="" id="file" accept="image/*">
-            <input type="text" name="" placeholder="Nom">
-            <input type="text" name="" placeholder="Prénom">
-            <input type="text" name="" placeholder="Année">
-            <input type="text" name="" placeholder="Email">
-            <input type="text" name="" placeholder="Tél">
-            <button style="float: center">Déconnexion</button>
+    <div class="page-holder bg-gray-100">
+        <!-- <header class="header bg-white shadow align-self-end py-3 px-xl-5 w-100">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-6 text-center text-md-start fw-bold">
+                  <p class="mb-2 mb-md-0 fw-bold">Therichpost.com</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end text-gray-400">
+                  <p class="mb-0">Jassa</p>
+                </div>
+              </div>
+            </div>
+          </header> -->
+        <div class="container-fluid px-lg-4 px-xl-5 contentDiv">
+            <!-- Page Header-->
+            <div class="page-header mb-4">
+                <h1 class="page-heading">Profile</h1>
+            </div>
+            <section>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0"><img class="avatar avatar-lg p-1"
+                                            src="https://therichpost.com/wp-content/uploads/2021/03/avatar2.png"
+                                            alt="Jassa Rich"></div>
+                                    <div class="flex-grow-1 ps-3">
+                                        <h4>Jassa Rich</h4>
+                                        <p class="text-muted mb-0">Coder</p>
+                                        <ul class="social-links list-inline mb-0 mt-2">
+                                            <li class="list-inline-item"><a href="javascript:void(0)"
+                                                    data-bs-toggle="tooltip" data-placement="top" title=""
+                                                    data-bs-original-title="Nathan's Facebook"
+                                                    aria-label="Nathan's Facebook"><i class="fab fa-facebook"></i></a>
+                                            </li>
+                                            <li class="list-inline-item"><a href="javascript:void(0)"
+                                                    data-bs-toggle="tooltip" data-placement="top" title=""
+                                                    data-bs-original-title="@nathan_andrews"
+                                                    aria-label="@nathan_andrews"><i class="fab fa-twitter"></i></a></li>
+                                            <li class="list-inline-item"><a href="javascript:void(0)"
+                                                    data-bs-toggle="tooltip" data-placement="top" title=""
+                                                    data-bs-original-title="+420777555987" aria-label="+420777555987"><i
+                                                        class="fa fa-phone"></i></a></li>
+                                            <li class="list-inline-item"><a href="javascript:void(0)"
+                                                    data-bs-toggle="tooltip" data-placement="top" title=""
+                                                    data-bs-original-title="@nathan" aria-label="@nathan"><i
+                                                        class="fab fa-skype"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+
+                        <form class="card mb-4">
+                            <div class="card-header">
+                                <h4 class="card-heading">Edit Profile</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <div class="mb-4">
+                                            <label class="form-label">Nom</label>
+                                            <input class="form-control" type="text" placeholder="Company"
+                                                value="Jassa Rich">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6">
+                                        <div class="mb-4">
+                                            <label class="form-label">Prénom</label>
+                                            <input class="form-control" type="text" placeholder="First name">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="mb-4">
+                                            <label class="form-label">Année</label>
+                                            <select class="form-control custom-select">
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4">
+                                        <div class="mb-4">
+                                            <label class="form-label">Email</label>
+                                            <input class="form-control" type="text" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="mb-4">
+                                            <label class="form-label">Tél</label>
+                                            <input class="form-control" type="number" placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer text-end">
+                                <button class="btn btn-primary" type="submit">Modifié</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
 </template>
 
 
-class="Profil"
-<style scoped>
 
-.acceuil{
-    position: absolute;
-    top: 20px;
-    left: 280px;
-    font-size: 18px;
-}
+<script>
+//importing bootstrap 5 Modules
+import "bootstrap/dist/css/bootstrap.min.css";
+export default {
 
-.cours{
-    position: absolute;
-    top: 20px;
-    left: 470px;
-    font-size: 18px;
 }
-.article{
-    position: absolute;
-    top: 20px;
-    left: 650px;
-    font-size: 18px;
-}
-.packs{
-    position: absolute;
-    top: 20px;
-    left: 800px;
-    font-size: 18px;
-}
-.acceuil:hover, .cours:hover, .article:hover, .packs:hover {
-    font-weight: bold;
-}
-.btn-try{
-    position: absolute;
-    top: 10px;
-    left: 1000px;
-    padding: 1%;
-    padding-left: 2%;
-    padding-right: 2%;
-    background-color:#E3E3E3;
-    border-radius: 15px;
-}
-.btn-try:hover {
-    background: #E98B1E;
-    color: #fff;
-    border-radius: 15px;
-    box-shadow: 0 0 5px #E98B1E,
-                0 0 25px #E98B1E,
-                0 0 50px #E98B1E,
-                0 0 100px #E98B1E;
-}
-.btn-connect{
-    position: absolute;
-    top: 10px;
-    left: 1200px;
-    color: white;
-    padding: 1%;
-    padding-left: 2%;
-    padding-right: 2%;
-    background-color: #E98B1E;
-    border-radius: 15px;
-}
-.btn-connect:hover {
-    background: #E98B1E;
-    color: #fff;
-    border-radius: 15px;
-    box-shadow: 0 0 5px #E98B1E,
-                0 0 25px #E98B1E,
-                0 0 50px #E98B1E,
-                0 0 100px #E98B1E;
-}
-.vertically-2 {
-    border-left: 1px solid black;
-    position: absolute;
-    left: 1160px;
-    top: 20px;
-    height: 30px;
-}
-.nav-bar {
-    position: sticky;
-    /*background-color: rgb(248, 0, 0); */
-    margin-left: 1.5%;
-    margin-right: 0%;
-    height: 70px;
-    width: 1400px;
-    border-radius: 10px 10px;
-    box-shadow: 5px 5px 18px grey;
-    border: 0px solid;
-}
-.logo {
-    height: 50px;
-    position: absolute;
-    top: 10px;
-    left: 30px;
-}
-a.name{
-    position: absolute;
-    top: 25px;
-    left: 75px;
-    font-weight: bold;
-}
-.vertically {
-    border-left: 1px solid black;
-    position: absolute;
-    left: 230px;
-    top: 20px;
-    height: 30px;
-}
-.box {
-    justify-content: center;
-    box-sizing: border-box;
-    border: 2px solid;
-    box-shadow: -3px -3px 7px #ffffff73,
-        3px 3px 5px rgba(94, 104, 121, 0.288);
-    border-radius: 5px;
-    padding: 10px;
-    background-color: white;
-    margin-top: 50px;
-    overflow: hidden;
-    float: center;
-    background-color: #fff;
-    width: 360px;
-    height: 510px;
-    margin-top: 30px;
-    margin-left: 20%;
-}
-
-img {
-    float: center;
-    box-sizing: border-box;
-    width: 149px;
-    height: 149px;
-    border-radius: 50%;
-    margin: auto;
-    border: 5px solid black;
-    padding: 3px;
-    background-color: white;
-}
-
-input[type="text"],
-input[type="email"] {
-    display: block;
-    box-sizing: border-box;
-    background: none;
-    color: black;
-    margin-bottom: 30px;
-    padding: 10px;
-    width: 320px;
-    height: 32px;
-    border: none;
-    border-bottom: 1px solid black;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 15px;
-    transition: 0.2s ease;
-}
-
-input[type="text"]:focus,
-input[type="email"]:focus {
-    border-bottom: 2px solid black;
-    border-bottom-right-radius: 20px;
-    color: #3498db;
-    transition: all 0.3s;
-}
-
-button {
-    border: 1px solid black;
-    color: black;
-    height: 30px;
-    width: 100px;
-    border-radius: 5px;
-    margin-left: 120px;
-    transition: all 0.3s;
-}
-
-button:hover {
-    background-color: #e98a1e;
-    transform: scale(1.1);
-}
-
-input[type="file"] {
-    display: none;
-}
-
-label {
-    box-sizing: border-box;
-    font-size: 20px;
-    color: black;
-    border: 1px solid black;
-    padding: -1px 10px;
-    border-radius: 5px;
-    transition: 0.2s ease;
-}
-
-label:hover {
-    background-color: #e98a1e;
-    color: black;
-}
-
-.box:hover {
-    width: 360px;
-    height: 600px;
-    border-radius: 5px;
-}
-
-/* .box:hover img {
-    width: 100px;
-    height: 100px;
-    margin: 20px;
-} */
-</style>
+</script>
